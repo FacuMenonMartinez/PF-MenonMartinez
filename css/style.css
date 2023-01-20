@@ -1,0 +1,187 @@
+/* Colores
+    Fuente: gris rgb(255, 241, 247)
+    Fondo: bordo rgb(158,25,52)
+    Footer: Negro */
+
+@font-face {
+    font-family: fuente-qatar;
+    src: url(../recursos/fuente-qatar.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* BODY */
+body {
+    background-color: rgb(158, 25, 52);
+    display: flex;
+    flex-direction: column;
+}
+/* Header */
+.img-header {
+    width: 100px;
+    margin-left: 20px;
+}
+
+
+.encabezadoGeneral {
+    background-color: rgb(158, 25, 52);
+    width: 100%;
+    position: fixed;
+    z-index: +5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu__seccion {
+    color: rgb(255, 241, 247);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: fuente-qatar;
+    margin: 5px;
+    padding: 10px;
+}
+
+.menu__seccion--resaltado {
+    color: rgb(158, 25, 52);
+    background-color: rgb(255, 241, 247);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: fuente-qatar;
+    margin: 5px;
+    padding: 0px 10px 0px 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Main */
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+/* Fondos de titulo */
+.contenido__principal--index {
+    background-image: url(../recursos/argentina-campeon.jpg);
+    height: 700px;
+    margin-top: 120px;
+}
+
+.contenido__principal--seleccionados{
+    background-image: url(../recursos/logo-seleccionados.png);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position-x: center;
+    height: 500px;
+    margin-top: 120px;
+}
+
+.contenido__principal--grupos{
+    background-image: url(../recursos/grupos-catar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-position-x: center;
+    height: 500px;
+    margin-top: 120px;
+}
+
+/* H1 */
+.contenido__principal--titulo {
+    font-family: fuente-qatar;
+    color: rgb(255, 241, 247);
+    font-size: 95px;
+    position: relative;
+    text-align: center;
+    margin: 300px 15px;
+    padding: 0px;
+    text-shadow: 10px 10px 10px black;
+}
+
+h1{
+    font-family: fuente-qatar;
+    color: rgb(255, 241, 247);
+    font-size: 95px;
+    position: relative;
+    text-align: center;
+    margin: 200px 15px;
+    padding: 0px;
+    text-shadow: 10px 10px 10px black;
+}
+h2{
+    font-family: fuente-qatar;
+    color: rgb(255, 241, 247);
+    font-size: 45px;
+    margin-left: 10px;
+}
+h3 {
+    font-family: fuente-qatar;
+    color: rgb(255, 241, 247);
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.campeones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campeones__lista {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: fuente-qatar;
+    color: rgb(255, 241, 247);
+    font-size: 20px;
+
+}
+
+.copa {
+    width: 200px;
+    height: 350px;
+}
+
+
+/* FASE DE GRUPOS */
+.grupos__h3{
+    font-family: fuente-qatar;
+    color: rgb(255, 241, 247);
+    font-size: 25px;
+    text-align: center;
+}
+table{
+    font-family: fuente-qatar;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 400px;
+    border-color: black;
+    border-style: groove;
+    color: rgb(255, 241, 247);
+    margin-left: 15px;
+    margin-bottom: 20px;
+    
+}
+.tablasA{
+    display: flex;
+}
+.resultadosA{
+    margin-left: 200px;
+}
+
+/* FOOTER */
+footer {
+height: 100px;
+background-color: black;
+}

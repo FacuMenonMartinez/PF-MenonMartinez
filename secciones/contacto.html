@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="encabezadoGeneral">
+        <nav>
+            <a href="./index.html">
+                <img class="img-header" src="../recursos/qatar-logo-copa.png" alt="Logo de Qatar 2022">
+            </a>
+            <ul class="menu">
+                <li>
+                    <a class="menu__seccion" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="menu__seccion" href="./seleccionados.html">Seleccionados</a>
+                </li>
+                <li>
+                    <a class="menu__seccion" href="./fase-de-grupos.html">Fase de Grupos</a>
+                </li>
+                <li>
+                    <a class="menu__seccion" href="./fase-eliminatoria.html">Fase Eliminatoria</a>
+                </li>
+                <li>
+                    <a class="menu__seccion--resaltado" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido">
+        <section class="contenido__principal--contacto">
+            <h1>Contacto</h1>
+        </section>
+        <form action="#" method="get">
+            <input type="text" placeholder="Nombre" name="nombre">
+            <br><br>
+            <input type="text" placeholder="Apellido" name="apellido">
+            <br><br>
+            <input type="email" placeholder="Email" name="email">
+            <br><br>
+            <select name="mejor-eliminatoria">
+                <option>Mejor Eliminatoria</option>
+                <option value="conmebol">CONMEBOL</option>
+                <option value="uefa">UEFA</option>
+                <option value="concacaf">CONCACAF</option>
+                <option value="afc">AFC</option>
+                <option value="ofc">OFC</option>
+                <option value="caf">CAF</option>
+            </select>
+            <br><br>
+            <textarea name="mejor-gol" placeholder="¿Cuál fue el mejor gol?" cols="30" rows="10"></textarea>
+            <br><br>
+            <span>¿Querés recibir actualizaciones?</span>
+            <span>Si</span>
+            <input type="radio" value="acepto" name="radio">
+            <span>No</span>
+            <input type="radio" value="no-acepto" name="radio">
+            <br><br>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar Informacion">
+        </form>
+    </main>
+    <footer class="pie">
+        <h3 class="pie__titulo">Copa del mundo Catar 2022</h3>
+
+    </footer>
+
+</body>
+
+</html>
