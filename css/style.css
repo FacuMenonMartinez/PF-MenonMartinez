@@ -69,6 +69,10 @@ li {
     list-style-type: none;
 }
 
+.menu li:hover{
+    text-shadow: 2px 2px 15px rgb(255, 241, 247);
+}
+
 /* Main */
 .contenido {
     display: flex;
@@ -224,10 +228,14 @@ margin-left: 20px;
 .individuales-nombre{
     grid-area: jugador;
     font-size: 30px;
-    text-shadow: 0px 1px 10px rgba(255, 241, 247, 0.733);
+    /* text-shadow: 0px 1px 10px rgba(255, 241, 247, 0.733); */
+    color: rgb(158, 25, 52);
+    transform: skewX(-15deg);
+    background-color: rgb(255, 241, 247);
     align-self: center;
     justify-self: center;
 }
+
 .individuales-escudo{
     height: 100%;
     width: 100%;
@@ -240,6 +248,8 @@ margin-left: 20px;
     object-fit: contain;
     grid-area: fotoJugador;
 }
+
+
 /* FASE DE GRUPOS */
 .grupos__h3{
     font-family: fuente-qatar;
