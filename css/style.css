@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* Header */
+/* HEADER */
 .img-header {
     width: 100px;
     margin-left: 20px;
@@ -30,6 +30,7 @@ body {
 
 .encabezadoGeneral {
     background-color: rgb(158, 25, 52);
+    border-bottom: 1px solid black;
     width: 100%;
     position: fixed;
     z-index: +5;
@@ -74,12 +75,12 @@ li {
     text-shadow: 2px 2px 15px rgb(255, 241, 247);
 }
 
-/* Main */
+/*------------------------------ MAIN---------------------------- */
 .contenido {
     display: flex;
     flex-direction: column;
 }
-/* Fondos de titulo */
+/* FONDOS DE TITULO*/
 .contenido__principal--index {
     background-image: url(../recursos/argentina-campeon.jpg);
     height: 700px;
@@ -104,10 +105,36 @@ li {
     margin-top: 120px;
 }
 
+.contenido__principal--eliminatoria{
+    background-image: url(../recursos/pelota-final.png);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position-x: center;
+    height: 500px;
+    margin-top: 150px;
+}
+
+.contenido__principal--contacto{
+    background-image: url(../recursos/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-position-x: center;
+    height: 500px;
+    margin-top: 150px;
+
+}
+
+
 /* H1 */
+h1{
+    font-size: 95px;
+    position: relative;
+    text-align: center;
+    margin: 200px 15px;
+    padding: 0px;
+    text-shadow: 10px 10px 10px black;
+}
 .contenido__principal--titulo {
-    font-family: fuente-qatar;
-    color: rgb(255, 241, 247);
     font-size: 95px;
     position: relative;
     text-align: center;
@@ -116,25 +143,21 @@ li {
     text-shadow: 10px 10px 10px black;
 }
 
-h1{
-    font-family: fuente-qatar;
-    color: rgb(255, 241, 247);
+.contenido__principal--eliminatoria h1{
     font-size: 95px;
     position: relative;
     text-align: center;
-    margin: 200px 15px;
+    margin: 150px 15px;
     padding: 0px;
     text-shadow: 10px 10px 10px black;
 }
+
+
 h2{
-    font-family: fuente-qatar;
-    color: rgb(255, 241, 247);
     font-size: 45px;
     margin-left: 10px;
 }
 h3 {
-    font-family: fuente-qatar;
-    color: rgb(255, 241, 247);
     font-size: 40px;
     margin-left: 10px;
     margin-top: 15px;
@@ -146,6 +169,9 @@ h3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    animation-name: desplazamientoDiv;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
 }
 .campeones div{
     display: grid;
@@ -214,6 +240,9 @@ margin-left: 20px;
     "informacion fotoJugador escudo";
     box-shadow: 0px 2px 30px black;
     margin-top: 15px;
+    animation-name: desplazamientoDiv;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
 }
 .individuales-categoria{
     font-size: 35px;
@@ -250,7 +279,27 @@ margin-left: 20px;
     grid-area: fotoJugador;
 }
 
+@keyframes desplazamientoDiv {
+    0%{
+        transform: translateX(-20px);
+    }
+    20%{
+        transform:translateX(-16px)        
+    }
+    40%{
+            transform:translateX(-12px)
+    }
+    60%{
+            transform:translateX(-8px)
+    }
+    80%{
+            transform: translateX(-4);
+    }
+    100%{
+            transform:translateX(-0px)
+    }
 
+}
 /* FASE DE GRUPOS */
 .grupos__h3{
     font-family: fuente-qatar;
