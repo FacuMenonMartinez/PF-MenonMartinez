@@ -27,7 +27,6 @@ body {
     margin-top: 20px;
 }
 
-
 .encabezadoGeneral {
     background-color: rgb(158, 25, 52);
     border-bottom: 1px solid black;
@@ -163,7 +162,7 @@ h3 {
     margin-top: 15px;
 }
 
-/* INDEX */
+/*---------------------------- INDEX------------------------------- */
 .campeones {
     margin: 30px;
     display: flex;
@@ -327,8 +326,10 @@ table{
     margin-left: 200px;
 }
 
-/* FOOTER */
+/*--------------------- FOOTER-------------------------- */
 footer {
 height: 100px;
 background-color: black;
 }
+
+/*------------------------ MEDIA QUERIES INDEX-------------------- */
