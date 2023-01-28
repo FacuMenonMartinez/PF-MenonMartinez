@@ -26,10 +26,10 @@
                     <a class="menu__seccion" href="./seleccionados.html">Seleccionados</a>
                 </li>
                 <li>
-                    <a class="menu__seccion--resaltado" href="./fase-de-grupos.html">Fase de Grupos</a>
+                    <a class="menu__seccion--resaltado" href="./fase-de-grupos.html">Grupos</a>
                 </li>
                 <li>
-                    <a class="menu__seccion" href="./fase-eliminatoria.html">Fase Eliminatoria</a>
+                    <a class="menu__seccion" href="./fase-eliminatoria.html">Eliminatoria</a>
                 </li>
                 <li>
                     <a class="menu__seccion" href="./contacto.html">Contacto</a>
@@ -37,107 +37,487 @@
             </ul>
         </nav>
     </header>
-    <main class="contenido">
+    <main class="contenido faseGrupos">
         <section class="animate__animated animate__fadeIn contenido__principal--grupos">
             <h1>Fase de Grupos</h1>
         </section>
 
-        <h2>Tablas de posiciones</h2>
-        <section class="tablasA">
-            <section class="posicionesA">
-                <h3 class="grupos__h3">Grupo A</h3>
-                <table border="3" cellpadding="2">
-                    <thead>
-                        <th>Selección</th>
-                        <th>Pts.</th>
-                        <th>G</th>
-                        <th>E</th>
-                        <th>P</th>
-                        <th>Dif.</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Paises Bajos</td>
-                            <td>7</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td>+4</td>
-                        </tr>
-                        <tr>
-                            <td>Senegal</td>
-                            <td>6</td>
-                            <td>2</td>
-                            <td>0</td>
-                            <td>1</td>
-                            <td>+1</td>
-                        </tr>
-                        <tr>
-                            <td>Ecuador</td>
-                            <td>4</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>+1</td>
-                        </tr>
-                        <tr>
-                            <td>Catar</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>3</td>
-                            <td>-6</td>
-                        </tr>
-                    </tbody>
+         <!-- TABLA DE POSICIONES -->
+        <section class="posiciones">
+            <h2 class="posiciones_titulo">Tablas de posiciones</h2>
+            <div class="grupoA">
+                <span class="grupo">Grupo A</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Países Bajos</span>
+                <span class="pais2">Senegal</span>
+                <span class="pais3">Ecuador</span>
+                <span class="pais4">Qatar</span>
+                <span class="pts1">7</span>
+                <span class="pts2">6</span>
+                <span class="pts3">4</span>
+                <span class="pts4">0</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">2</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">0</span>
+                <span class="perdidos1">0</span>
+                <span class="perdidos2">1</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">3</span>
+                <span class="empatados1">1</span>
+                <span class="empatados2">0</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">0</span>
+                <span class="dif1">+4</span>
+                <span class="dif2">+1</span>
+                <span class="dif3">+1</span>
+                <span class="dif4">-6</span>
+            </div>
+            <div class="grupoB">
+                <span class="grupo">Grupo B</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Inglaterra</span>
+                <span class="pais2">Estados Unidos</span>
+                <span class="pais3">Irán</span>
+                <span class="pais4">Gales</span>
+                <span class="pts1">7</span>
+                <span class="pts2">5</span>
+                <span class="pts3">3</span>
+                <span class="pts4">1</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">1</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">0</span>
+                <span class="empatados1">1</span>
+                <span class="empatados2">2</span>
+                <span class="empatados3">0</span>
+                <span class="empatados4">1</span>
+                <span class="perdidos1">0</span>
+                <span class="perdidos2">0</span>
+                <span class="perdidos3">2</span>
+                <span class="perdidos4">2</span>
+                <span class="dif1">+7</span>
+                <span class="dif2">+1</span>
+                <span class="dif3">-3</span>
+                <span class="dif4">-5</span>
+            </div>
+            <div class="grupoC">
+                <span class="grupo">Grupo C</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Argentina</span>
+                <span class="pais2">Polonia</span>
+                <span class="pais3">México</span>
+                <span class="pais4">Arabia Saudita</span>
+                <span class="pts1">6</span>
+                <span class="pts2">4</span>
+                <span class="pts3">4</span>
+                <span class="pts4">3</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">1</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">1</span>
+                <span class="empatados1">0</span>
+                <span class="empatados2">1</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">0</span>
+                <span class="perdidos1">1</span>
+                <span class="perdidos2">1</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">2</span>
+                <span class="dif1">+3</span>
+                <span class="dif2">0</span>
+                <span class="dif3">-1</span>
+                <span class="dif4">-2</span>
+            </div>
+            <div class="grupoD">
+                <span class="grupo">Grupo D</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Francias</span>
+                <span class="pais2">Australia</span>
+                <span class="pais3">Túnez</span>
+                <span class="pais4">Dinamarca</span>
+                <span class="pts1">6</span>
+                <span class="pts2">6</span>
+                <span class="pts3">4</span>
+                <span class="pts4">1</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">2</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">0</span>
+                <span class="empatados1">0</span>
+                <span class="empatados2">0</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">1</span>
+                <span class="perdidos1">1</span>
+                <span class="perdidos2">1</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">2</span>
+                <span class="dif1">+3</span>
+                <span class="dif2">-1</span>
+                <span class="dif3">0</span>
+                <span class="dif4">-2</span>
+            </div>
+            <div class="grupoE">
+                <span class="grupo">Grupo E</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Japón</span>
+                <span class="pais2">España</span>
+                <span class="pais3">Alemania</span>
+                <span class="pais4">Costa Rica</span>
+                <span class="pts1">6</span>
+                <span class="pts2">4</span>
+                <span class="pts3">4</span>
+                <span class="pts4">3</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">1</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">1</span>
+                <span class="empatados1">0</span>
+                <span class="empatados2">1</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">0</span>
+                <span class="perdidos1">1</span>
+                <span class="perdidos2">1</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">2</span>
+                <span class="dif1">+1</span>
+                <span class="dif2">+6</span>
+                <span class="dif3">+1</span>
+                <span class="dif4">-8</span>
+            </div>
+            <div class="grupoF">
+                <span class="grupo">Grupo F</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Marruecos</span>
+                <span class="pais2">Croacia</span>
+                <span class="pais3">Bélgica</span>
+                <span class="pais4">Canadá</span>
+                <span class="pts1">7</span>
+                <span class="pts2">5</span>
+                <span class="pts3">4</span>
+                <span class="pts4">0</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">1</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">0</span>
+                <span class="empatados1">1</span>
+                <span class="empatados2">2</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">0</span>
+                <span class="perdidos1">0</span>
+                <span class="perdidos2">0</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">3</span>
+                <span class="dif1">+3</span>
+                <span class="dif2">+3</span>
+                <span class="dif3">-1</span>
+                <span class="dif4">-5</span>
+            </div>
+            <div class="grupoG">
+                <span class="grupo">Grupo G</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Brasil</span>
+                <span class="pais2">Suiza</span>
+                <span class="pais3">Camerún</span>
+                <span class="pais4">Serbia</span>
+                <span class="pts1">6</span>
+                <span class="pts2">6</span>
+                <span class="pts3">4</span>
+                <span class="pts4">1</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">2</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">0</span>
+                <span class="empatados1">0</span>
+                <span class="empatados2">0</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">1</span>
+                <span class="perdidos1">1</span>
+                <span class="perdidos2">1</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">2</span>
+                <span class="dif1">+2</span>
+                <span class="dif2">0</span>
+                <span class="dif3">0</span>
+                <span class="dif4">-2</span>
+            </div>
+            <div class="grupoH">
+                <span class="grupo">Grupo H</span>
+                <span class="pts">Pts.</span>
+                <span class="ganados">G</span>
+                <span class="empatados">E</span>
+                <span class="perdidos">P</span>
+                <span class="dif">Dif.</span>
+                <span class="pais1">Portugal</span>
+                <span class="pais2">Corea del Sur*</span>
+                <span class="pais3">Uruguay*</span>
+                <span class="pais4">Ghana</span>
+                <span class="pts1">6</span>
+                <span class="pts2">4</span>
+                <span class="pts3">4</span>
+                <span class="pts4">3</span>
+                <span class="ganados1">2</span>
+                <span class="ganados2">1</span>
+                <span class="ganados3">1</span>
+                <span class="ganados4">1</span>
+                <span class="empatados1">0</span>
+                <span class="empatados2">1</span>
+                <span class="empatados3">1</span>
+                <span class="empatados4">0</span>
+                <span class="perdidos1">1</span>
+                <span class="perdidos2">1</span>
+                <span class="perdidos3">1</span>
+                <span class="perdidos4">2</span>
+                <span class="dif1">+2</span>
+                <span class="dif2">0</span>
+                <span class="dif3">0</span>
+                <span class="dif4">-2</span>
+            </div>
+            <span class="uruguay">*En este caso el seleccionado surcoreano obtuvo la clasificacion
+                 por poseer menos tarjetas amarillas que la seleccion uruguaya.</span>
+         </section>
 
-                </table>
 
-            </section>
-            <section class="resultadosA">
-                <h3 class="grupos__h3">Resultados</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Qatar</td>
-                            <td>0</td>
-                            <td>2</td>
-                            <td>Ecuador</td>
-                        </tr>
-                        <tr>
-                            <td>Senegal</td>
-                            <td>0</td>
-                            <td>2</td>
-                            <td>Paises Bajos</td>
-                        </tr>
-                        <tr>
-                            <td>Qatar</td>
-                            <td>1</td>
-                            <td>3</td>
-                            <td>Senegal</td>
-                        </tr>
-                        <tr>
-                            <td>Ecuador</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>Paises Bajos</td>
-                        </tr>
-                        <tr>
-                            <td>Qatar</td>
-                            <td>0</td>
-                            <td>2</td>
-                            <td>Paises Bajos</td>
-                        </tr>
-                        <tr>
-                            <td>Ecuador</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>Senegal</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                 <!-- RESULTADOS ¿SE PODRA HACER SIN  ESCRIBIR TANTAS VECES CADA EQUIPO? -->
+        <section class="resultados">
+            <h2 class="resultados_titulo">Tablas de resultados</h2>
+            <div class="resultadosA">
+                <span class="equipo1">Qatar</span>
+                <span class="equipo2">Ecuador</span>
+                <span class="equipo3">Países Bajos</span>
+                <span class="equipo4">Senegal</span>
+                <span class="equipo5">Qatar</span>
+                <span class="equipo6">Ecuador</span>
+                <span class="equipo7">Países Bajos</span>
+                <span class="equipo8">Senegal</span>
+                <span class="equipo9">Qatar</span>
+                <span class="equipo10">Ecuador</span>
+                <span class="equipo11">Países Bajos</span>
+                <span class="equipo12">Senegal</span>
+                <span class="resultado1">0</span>
+                <span class="resultado2">2</span>
+                <span class="resultado3">0</span>
+                <span class="resultado4">2</span>
+                <span class="resultado5">1</span>
+                <span class="resultado6">3</span>
+                <span class="resultado7">1</span>
+                <span class="resultado8">1</span>
+                <span class="resultado9">0</span>
+                <span class="resultado10">2</span>
+                <span class="resultado11">1</span>
+                <span class="resultado12">2</span>
+            </div>
+            <div class="resultadosB">
+                <span class="equipo1">Inglaterra</span>
+                <span class="equipo2">Irán</span>
+                <span class="equipo3">Estados Unidos</span>
+                <span class="equipo4">Gales</span>
+                <span class="equipo5">Irán</span>
+                <span class="equipo6">Gales</span>
+                <span class="equipo7">Inglaterra</span>
+                <span class="equipo8">Estados Unidos</span>
+                <span class="equipo9">Inglaterra</span>
+                <span class="equipo10">Gales</span>
+                <span class="equipo11">Irán</span>
+                <span class="equipo12">Estados Unidos</span>
+                <span class="resultado1">6</span>
+                <span class="resultado2">2</span>
+                <span class="resultado3">1</span>
+                <span class="resultado4">1</span>
+                <span class="resultado5">2</span>
+                <span class="resultado6">0</span>
+                <span class="resultado7">0</span>
+                <span class="resultado8">0</span>
+                <span class="resultado9">3</span>
+                <span class="resultado10">0</span>
+                <span class="resultado11">0</span>
+                <span class="resultado12">1</span>             
 
-
+            </div>
+            <div class="resultadosC">
+                <span class="equipo1">Argentina</span>
+                <span class="equipo2">Arabia Saudita</span>
+                <span class="equipo3">México</span>
+                <span class="equipo4">Polonia</span>
+                <span class="equipo5">Arabia Saudita</span>
+                <span class="equipo6">Polonia</span>
+                <span class="equipo7">Argentina</span>
+                <span class="equipo8">México</span>
+                <span class="equipo9">Argentina</span>
+                <span class="equipo10">Polonia</span>
+                <span class="equipo11">Arabia Saudita</span>
+                <span class="equipo12">México</span>
+                <span class="resultado1">1</span>
+                <span class="resultado2">2</span>
+                <span class="resultado3">0</span>
+                <span class="resultado4">0</span>
+                <span class="resultado5">0</span>
+                <span class="resultado6">2</span>
+                <span class="resultado7">2</span>
+                <span class="resultado8">0</span>
+                <span class="resultado9">2</span>
+                <span class="resultado10">0</span>
+                <span class="resultado11">1</span>
+                <span class="resultado12">2</span>
+            </div>
+            <div class="resultadosD">
+                <span class="equipo1">Dinamarca</span>
+                <span class="equipo2">Túnez</span>
+                <span class="equipo3">Francia</span>
+                <span class="equipo4">Australia</span>
+                <span class="equipo5">Australia</span>
+                <span class="equipo6">Túnez</span>
+                <span class="equipo7">Francia</span>
+                <span class="equipo8">Dinamarca</span>
+                <span class="equipo9">Australia</span>
+                <span class="equipo10">Dinamarca</span>
+                <span class="equipo11">Francia</span>
+                <span class="equipo12">Túnez</span>
+                <span class="resultado1">0</span>
+                <span class="resultado2">0</span>
+                <span class="resultado3">4</span>
+                <span class="resultado4">1</span>
+                <span class="resultado5">1</span>
+                <span class="resultado6">0</span>
+                <span class="resultado7">2</span>
+                <span class="resultado8">1</span>
+                <span class="resultado9">1</span>
+                <span class="resultado10">0</span>
+                <span class="resultado11">0</span>
+                <span class="resultado12">1</span>
+            </div>
+            <div class="resultadosE">
+                <span class="equipo1">Alemania</span>
+                <span class="equipo2">Japón</span>
+                <span class="equipo3">España</span>
+                <span class="equipo4">Costa Rica</span>
+                <span class="equipo5">Costa Rica</span>
+                <span class="equipo6">Japón</span>
+                <span class="equipo7">España</span>
+                <span class="equipo8">Alemania</span>
+                <span class="equipo9">España</span>
+                <span class="equipo10">Japón</span>
+                <span class="equipo11">Costa Rica</span>
+                <span class="equipo12">Alemania</span>
+                <span class="resultado1">1</span>
+                <span class="resultado2">2</span>
+                <span class="resultado3">7</span>
+                <span class="resultado4">0</span>
+                <span class="resultado5">1</span>
+                <span class="resultado6">0</span>
+                <span class="resultado7">1</span>
+                <span class="resultado8">1</span>
+                <span class="resultado9">1</span>
+                <span class="resultado10">2</span>
+                <span class="resultado11">2</span>
+                <span class="resultado12">4</span>
+            </div>
+            <div class="resultadosF">
+                <span class="equipo1">Marruecos</span>
+                <span class="equipo2">Croacia</span>
+                <span class="equipo3">Bélgica</span>
+                <span class="equipo4">Canadá</span>
+                <span class="equipo5">Bélgica</span>
+                <span class="equipo6">Marruecos</span>
+                <span class="equipo7">Canadá</span>
+                <span class="equipo8">Croacia</span>
+                <span class="equipo9">Bélgica</span>
+                <span class="equipo10">Croacia</span>
+                <span class="equipo11">Canadá</span>
+                <span class="equipo12">Marruecos</span>
+                <span class="resultado1">0</span>
+                <span class="resultado2">0</span>
+                <span class="resultado3">1</span>
+                <span class="resultado4">0</span>
+                <span class="resultado5">0</span>
+                <span class="resultado6">2</span>
+                <span class="resultado7">1</span>
+                <span class="resultado8">4</span>
+                <span class="resultado9">0</span>
+                <span class="resultado10">0</span>
+                <span class="resultado11">1</span>
+                <span class="resultado12">2</span>
+            </div>
+            <div class="resultadosG">
+                <span class="equipo1">Suiza</span>
+                <span class="equipo2">Camerún</span>
+                <span class="equipo3">Brasil</span>
+                <span class="equipo4">Serbia</span>
+                <span class="equipo5">Serbia</span>
+                <span class="equipo6">Camerún</span>
+                <span class="equipo7">Brasil</span>
+                <span class="equipo8">Suiza</span>
+                <span class="equipo9">Brasil</span>
+                <span class="equipo10">Camerún</span>
+                <span class="equipo11">Serbia</span>
+                <span class="equipo12">Suiza</span>
+                <span class="resultado1">1</span>
+                <span class="resultado2">0</span>
+                <span class="resultado3">2</span>
+                <span class="resultado4">0</span>
+                <span class="resultado5">3</span>
+                <span class="resultado6">3</span>
+                <span class="resultado7">1</span>
+                <span class="resultado8">0</span>
+                <span class="resultado9">0</span>
+                <span class="resultado10">1</span>
+                <span class="resultado11">2</span>
+                <span class="resultado12">3</span>
+            </div>
+            <div class="resultadosH">
+                <span class="equipo1">Uruguay</span>
+                <span class="equipo2">Corea del Sur</span>
+                <span class="equipo3">Portugal</span>
+                <span class="equipo4">Ghana</span>
+                <span class="equipo5">Ghana</span>
+                <span class="equipo6">Corea del Sur</span>
+                <span class="equipo7">Portugal</span>
+                <span class="equipo8">Uruguay</span>
+                <span class="equipo9">Portugal</span>
+                <span class="equipo10">Corea del Sur</span>
+                <span class="equipo11">Ghana</span>
+                <span class="equipo12">Uruguay</span>
+                <span class="resultado1">0</span>
+                <span class="resultado2">0</span>
+                <span class="resultado3">3</span>
+                <span class="resultado4">2</span>
+                <span class="resultado5">3</span>
+                <span class="resultado6">2</span>
+                <span class="resultado7">2</span>
+                <span class="resultado8">0</span>
+                <span class="resultado9">1</span>
+                <span class="resultado10">2</span>
+                <span class="resultado11">0</span>
+                <span class="resultado12">2</span>
+            </div>
         </section>
 
     </main>
