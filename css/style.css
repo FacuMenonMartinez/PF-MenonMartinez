@@ -24,9 +24,9 @@ body {
 
 /* HEADER */
 .img-header {
-    width: 100px;
-    margin-left: 20px;
-    margin-top: 20px;
+    width: 7vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
 }
 
 .encabezadoGeneral {
@@ -51,8 +51,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5vw;
-    margin: 5px;
-    padding: 10px;
+    margin: 4vw;
 }
 
 .menu__seccion--resaltado {
@@ -61,7 +60,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5vw;
-    margin: 5px;
+    margin: 4vw;
     padding: 0px 10px 0px 10px;
 }
 
@@ -81,93 +80,87 @@ li {
 
 /* FONDOS DE TITULO*/
 .contenido__principal--index {
-    margin-top: 150px;
     background-image: url(../recursos/argentina-campeon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 14vh;
 }
 
 .contenido__principal--seleccionados {
     background-image: url(../recursos/logo-seleccionados.png);
     background-repeat: no-repeat;
-    background-size: 500px 500px;
+    background-size: 35%;
     background-position-x: center;
-    height: 500px;
-    margin-top: 120px;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 12vh;
 }
 
 .contenido__principal--grupos {
-    background-image: url(../recursos/grupos-catar.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-    background-position-x: center;
-    margin-top: 15vh;
-    grid-area: titulo;
+    background-image: url(../recursos/grupo-catar1.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 12vh;
+    /* grid-area: titulo; */
 }
 
 .contenido__principal--eliminatoria {
     background-image: url(../recursos/pelota-final.png);
     background-repeat: no-repeat;
-    background-size: 400px 400px;
+    background-size: 35%;
     background-position-x: center;
-    height: 500px;
-    margin-top: 150px;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 22vh;
 }
 
 .contenido__principal--contacto {
     background-image: url(../recursos/contacto.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 500px;
-    background-position-x: center;
-    height: 500px;
-    margin-top: 150px;
+    background-size: cover;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 12vh;
 
 }
 
 
 /* H1 */
 h1 {
-    font-size: 95px;
-    position: relative;
+    font-size: 15vh;
+    /* position: relative; */
     text-align: center;
-    padding: 42vh;
+    padding-top: 25vh;
     text-shadow: 10px 10px 10px black;
 }
 
 .contenido__principal--titulo {
-    font-size: 95px;
+    font-size: 15vh;
     text-align: center;
     padding: 10%;
     text-shadow: 10px 10px 10px black;
 }
 
-.contenido__principal--eliminatoria h1 {
-    font-size: 95px;
-    position: relative;
-    text-align: center;
-    margin: 150px 15px;
-    padding: 0px;
-    text-shadow: 10px 10px 10px black;
-}
 
 
 h2 {
-    font-size: 45px;
-    margin-left: 10px;
+    font-size: 6vh;
+    margin-left: 3vw;
 }
 
 h3 {
-    font-size: 40px;
-    margin-left: 10px;
-    margin-top: 15px;
+    font-size: 5vh;
+    margin-top: 3vh;
 }
 
 /*---------------------------- INDEX------------------------------- */
 .campeones {
-    margin: 30px;
+    margin: auto;
     display: flex;
+    width: 95%;
     flex-direction: column;
     flex-wrap: wrap;
     animation-name: desplazamientoDiv;
@@ -179,7 +172,7 @@ h3 {
     display: grid;
     margin: auto;
     width: 100%;
-    height: 400px;
+    height: 60vh;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -200,38 +193,35 @@ h3 {
 
 .campeones-lista {
     grid-area: campeonesLista;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 22px;
-
+    align-self: center;
+    justify-self: center;
+    font-size: 4vh;
 }
 
 .campeones-copa {
-    margin-top: 20px;
-    margin-left: 20px;
     grid-area: campeonesCopa;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .copaInfo {
-    align-self: center;
-    margin-right: 50px;
+    justify-self: left;
+    margin-right: 1vw;
 }
 
 .copa {
-    width: 300px;
-    height: 350px;
-    margin-left: 20px;
+    height: 45vh;
     object-fit: contain;
     justify-self: center;
 
 }
 
 .individuales {
-    margin: 30px;
+    margin: 2vh auto;
+    width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -239,7 +229,7 @@ h3 {
 
 .individuales div {
     display: grid;
-    height: 400px;
+    height: 50vh;
     width: 100%;
     grid-template-columns: 2fr 2fr 2fr;
     grid-auto-rows: 0.5fr 1fr 2fr;
@@ -248,28 +238,29 @@ h3 {
         "jugador fotoJugador escudo"
         "informacion fotoJugador escudo";
     box-shadow: 0px 2px 30px black;
-    margin-top: 15px;
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
     animation-name: desplazamientoDiv;
     animation-duration: 0.5s;
     animation-iteration-count: initial;
 }
 
 .individuales-categoria {
-    font-size: 35px;
+    font-size: 5vh;
     grid-area: categoria;
-    padding-left: 15px;
+    padding-left: 2vw;
 }
 
 .individuales-info {
     grid-area: informacion;
-    font-size: 22px;
+    font-size: 3vh;
     align-self: initial;
     justify-self: center;
 }
 
 .individuales-nombre {
     grid-area: jugador;
-    font-size: 30px;
+    font-size: 4vh;
     color: rgb(158, 25, 52);
     transform: skewX(-15deg);
     background-color: rgb(255, 241, 247);
@@ -285,8 +276,8 @@ h3 {
 }
 
 .individuales-jugador {
-    height: 90%;
-    width: 90%;
+    height: 95%;
+    width: 95%;
     object-fit: contain;
     grid-area: fotoJugador;
 }
@@ -328,8 +319,9 @@ h3 {
     grid-template-areas:
         "titulo titulo"
         "posiciones resultados";
-        height: auto;
+    height: auto;
 }
+
 .contenido__principal--grupos {
     grid-area: titulo;
 }
@@ -648,70 +640,50 @@ footer {
 /*------------------------ MEDIA QUERIES INDEX MEDIANOS-------------------- */
 @media(max-width:800px) {
 
-
+    /* -----------HEADER------------ */
     .menu__seccion {
-        /* font-size: 16px; */
+        font-size: 2.7vh;
+        margin: 2vw;
     }
-
-    .img-header {
-        width: 75px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    .contenido__principal--index {
-        display: flex;
-        align-items: center;
-        margin-top: 110px;
-        background-image: url(../recursos/argentina-campeon.jpg);
-    }
-
-    /* no me deja modificar el tamaño */
-    h1 {
-        font-size: 10px;
+    .menu__seccion--resaltado{
+        font-size: 2.7vh;
+        margin: 2vw;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 5vh;
     }
 
     h3 {
-        font-size: 20px;
-        margin-left: 5px;
-        margin-top: 10px;
+        font-size: 4vh;
     }
 
     .campeones div {
+        display: grid;
         margin: auto;
-        align-items: center;
-        height: 350px;
+        width: 100%;
+        height: 60vh;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "campeonesLista campeonesCopa campeonesCopa ";
+        box-shadow: 0px 2px 30px black;
+
     }
 
     .campeones-lista {
-        font-size: 18px;
+        font-size: 3vh;
 
-    }
-
-    .campeones-copa {
-        align-items: center;
-        margin: 0px;
-
-    }
-
-    .copa {
-        width: 150px;
-        height: 200px;
     }
 
     .copaInfo {
-        object-fit: contain;
-        font-size: 14px;
-        margin-right: 20px;
+        font-size: 2.5vh;
+
     }
 
     .individuales div {
         display: grid;
-        height: 400px;
+        height: 65vh;
         width: 100%;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 0.5fr 2fr 1.5fr;
@@ -722,7 +694,7 @@ footer {
     }
 
     .individuales-jugador {
-        height: 90%;
+        height: 100%;
         width: 90%;
         object-fit: contain;
         justify-self: center;
@@ -736,20 +708,13 @@ footer {
     }
 
     .individuales-nombre {
-        font-size: 20px;
         align-self: baseline;
     }
 
     .individuales-info {
-        font-size: 18px;
         align-self: baseline;
-
     }
 
-    .individuales-categoria {
-        font-size: 25px;
-
-    }
 }
 
 /* ----------------------- MEDIA QUERIES INDEX CHICOS--------------------- */
@@ -788,20 +753,18 @@ footer {
     }
 
     .contenido__principal--index {
-        margin-top: 105px;
+        margin-top: 17vh;
         height: 40vh;
-        width: 100vw;
     }
 
     .contenido__principal--titulo {
-        font-size: 40px;
-        margin: 10px;
-
+        font-size: 7vh;
+        padding: 7%;
     }
 
     h1 {
-        font-size: 40px;
-        margin: 10px;
+        font-size: 7vh;
+        padding: 7%;
     }
 
     .contenido__principal--eliminatoria h1 {
@@ -814,12 +777,12 @@ footer {
     }
 
     .campeones {
-        margin: 10px 0px;
         width: 100%;
     }
 
-    h3 {}
-
+    h3{
+        text-align: center;
+    }
     .campeones div {
         display: grid;
         align-items: flex-start;
@@ -833,46 +796,38 @@ footer {
             "campeonesLista ediciones"
             "campeonesCopa campeonesCopa "
             "campeonesCopa campeonesCopa";
-        /* justify-items:flex-start; */
-        /* box-shadow: 0px 2px 30px black; */
-
     }
 
     .ediciones {
         display: block;
         grid-area: ediciones;
-        font-size: 28px;
+        font-size: 7vh;
         align-self: center;
-        justify-self: center;
         text-align: center;
     }
 
     .campeones-lista {
         grid-area: campeonesLista;
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 16px;
-        align-self: center;
-
+        justify-self: left;
+        margin-left: 4vw;
     }
 
     .campeones-copa {
         align-self: initial;
         grid-area: campeonesCopa;
-        width: 100%;
-        height: auto;
         display: flex;
         flex-direction: column;
     }
 
     .copaInfo {
         text-align: center;
-        font-size: 14px;
-        margin-right: 0px;
+        font-size: 2.5vh;
+        margin: 1vh;
+        text-shadow: 1px 1px 10px black;
     }
 
     .individuales {
-        margin: 40px 0px;
+        width: 100%;
     }
 
     .individuales div {
@@ -893,20 +848,17 @@ footer {
     }
 
     .individuales-nombre {
-        font-size: 20px;
         align-self: center;
 
     }
 
     .individuales-jugador {
-        height: 100%;
         width: 95%;
-        object-fit: contain;
         grid-area: fotoJugador;
     }
 
     .individuales-categoria {
-        font-size: 16px;
-        padding-left: 10px;
+        font-size: 4vh;
+        text-align: center;
     }
 }
