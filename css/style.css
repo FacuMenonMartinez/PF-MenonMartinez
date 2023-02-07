@@ -45,6 +45,9 @@ nav {
 .menu {
     display: flex;
     flex-direction: row;
+    /* por modificacion de bootstrap */
+    margin: 0;
+    padding: 0;
 }
 
 .menu__seccion {
@@ -52,6 +55,8 @@ nav {
     font-weight: bold;
     font-size: 1.5vw;
     margin: 4vw;
+    /* por modificacion de bootstrap */
+    color: rgb(255, 241, 247);
 }
 
 .menu__seccion--resaltado {
@@ -814,12 +819,14 @@ footer {
     .uruguay {
         padding: 2vh 1vw 0 7vw;
     }
-    .posiciones{
+
+    .posiciones {
         padding-left: 0;
         justify-items: center;
         grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr
     }
-    .faseGrupos{
+
+    .faseGrupos {
         margin-bottom: -7vh;
     }
 }
@@ -1031,25 +1038,29 @@ footer {
     .posiciones_titulo {
         display: none;
     }
-.resultados_titulo{
-    display: none;
-}
-.posiciones section{
-    width: 100%;
-    font-size: 2.5vh;
-    height: 30vh;
-    border-bottom: 1.5px solid rgb(255, 241, 247);
-}
-.posiciones div{
-    width: 100%;
-    font-size: 3vh;
-    height: 30vh;
-    margin-top: 4vh;
-}
-.uruguay{
-    margin-left: 2vw;
-    padding: 0;
-}
+
+    .resultados_titulo {
+        display: none;
+    }
+
+    .posiciones section {
+        width: 100%;
+        font-size: 2.5vh;
+        height: 30vh;
+        border-bottom: 1.5px solid rgb(255, 241, 247);
+    }
+
+    .posiciones div {
+        width: 100%;
+        font-size: 3vh;
+        height: 30vh;
+        margin-top: 4vh;
+    }
+
+    .uruguay {
+        margin-left: 2vw;
+        padding: 0;
+    }
 
 
 }
