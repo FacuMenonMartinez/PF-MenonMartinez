@@ -1,0 +1,298 @@
+/* TITULO*/
+.contenido__principal--index {
+    background-image: url(../recursos/argentina-campeon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 14vh;
+}
+
+.contenido__principal--titulo {
+    font-size: 15vh;
+    text-align: center;
+    padding: 10%;
+    text-shadow: 10px 10px 10px black;
+}
+
+// CONTENIDO
+.campeones {
+    margin: auto;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    animation-name: desplazamientoDiv;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+}
+
+.campeones div {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 60vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "campeonesLista campeonesCopa campeonesCopa ";
+    /* justify-items: center; */
+    box-shadow: 0px 2px 30px black;
+}
+
+.ediciones {
+    display: none;
+}
+
+.campeones-titulo {
+    grid-area: campeonesTitulo;
+    justify-self: flex-start;
+}
+
+.campeones-lista {
+    grid-area: campeonesLista;
+    align-self: center;
+    justify-self: center;
+    font-size: 4vh;
+}
+
+.campeones-copa {
+    grid-area: campeonesCopa;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copaInfo {
+    justify-self: left;
+    margin-right: 1vw;
+}
+
+.copa {
+    height: 45vh;
+    object-fit: contain;
+    justify-self: center;
+}
+
+/* -----------------------------INDIVIDUALES----------------------------- */
+.individuales {
+    margin: 2vh auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.individuales div {
+    display: grid;
+    height: 50vh;
+    width: 100%;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-auto-rows: 0.5fr 1fr 2fr;
+    grid-template-areas: "categoria categoria categoria"
+        "jugador fotoJugador escudo"
+        "informacion fotoJugador escudo";
+    box-shadow: 0px 2px 30px black;
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
+    animation-name: desplazamientoDiv;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+}
+
+.individuales-categoria {
+    font-size: 5vh;
+    grid-area: categoria;
+    padding-left: 2vw;
+}
+
+.individuales-info {
+    grid-area: informacion;
+    font-size: 3vh;
+    align-self: initial;
+    justify-self: center;
+}
+
+.individuales-nombre {
+    grid-area: jugador;
+    font-size: 4vh;
+    color: #9e1934;
+    transform: skewX(-15deg);
+    background-color: #fff1f7;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.individuales-escudo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    grid-area: escudo;
+}
+
+.individuales-jugador {
+    height: 95%;
+    width: 95%;
+    object-fit: contain;
+    grid-area: fotoJugador;
+}
+
+@keyframes desplazamientoDiv {
+
+    0% {
+        transform: translateX(-20px);
+    }
+
+    20% {
+        transform: translateX(-16px);
+    }
+
+    40% {
+        transform: translateX(-12px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(-4);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+// MEDIAS QUERIES MEDIANOS
+@media (max-width: 800px) {
+
+    /* -----------------INDEX MEDIANO---------------------- */
+    .campeones div {
+        display: grid;
+        margin: auto;
+        width: 100%;
+        height: 60vh;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "campeonesLista campeonesCopa campeonesCopa ";
+        box-shadow: 0px 2px 30px black;
+    }
+
+    .campeones-lista {
+        font-size: 3vh;
+    }
+
+    .copaInfo {
+        font-size: 2.5vh;
+    }
+
+    .individuales div {
+        display: grid;
+        height: 65vh;
+        width: 100%;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 0.5fr 2fr 1.5fr;
+        grid-template-areas: "categoria categoria"
+            "fotoJugador escudo"
+            "jugador informacion";
+    }
+
+    .individuales-jugador {
+        height: 100%;
+        width: 90%;
+        object-fit: contain;
+        justify-self: center;
+    }
+
+    .individuales-escudo {
+        height: 80%;
+        width: 80%;
+        justify-self: center;
+    }
+
+    .individuales-nombre {
+        align-self: baseline;
+    }
+
+    .individuales-info {
+        align-self: baseline;
+    }
+}
+// MEDIAS QUERIES PEQUEÑOS
+@media (max-width: 480px) {
+  
+    /* --------------------INDEX------------------------ */
+    .contenido__principal--index {
+      margin-top: 17vh;
+      height: 40vh; }
+    .contenido__principal--titulo {
+      font-size: 7vh;
+      padding: 7%; }
+    h1 {
+      font-size: 6vh;
+      padding: 7%; }
+    .contenido__principal--eliminatoria h1 {
+      font-size: 40px;
+      margin: 10px; }
+    h2 {
+      display: none; }
+    .campeones {
+      width: 100%; }
+    h3 {
+      text-align: center; }
+    .campeones div {
+      display: grid;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.7fr 1fr 1fr;
+      grid-template-areas: "campeonesLista ediciones"
+   "campeonesCopa campeonesCopa "
+   "campeonesCopa campeonesCopa"; }
+    .ediciones {
+      display: block;
+      grid-area: ediciones;
+      font-size: 6vh;
+      align-self: center;
+      text-align: center; }
+    .campeones-lista {
+      grid-area: campeonesLista;
+      justify-self: left;
+      margin-left: 4vw; }
+    .campeones-copa {
+      align-self: initial;
+      grid-area: campeonesCopa;
+      display: flex;
+      flex-direction: column; }
+    .copaInfo {
+      text-align: center;
+      font-size: 2.5vh;
+      margin: 1vh;
+      text-shadow: 1px 1px 10px black; }
+    .individuales {
+      width: 100%; }
+    .individuales div {
+      display: grid;
+      height: auto;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.3fr 2fr 0.5fr 0.3fr;
+      grid-template-areas: "categoria"
+   "fotoJugador"
+   "jugador"
+   "informacion"; }
+    .individuales-escudo {
+      display: none; }
+    .individuales-nombre {
+      align-self: center; }
+    .individuales-jugador {
+      width: 95%;
+      grid-area: fotoJugador; }
+    .individuales-categoria {
+      font-size: 4vh;
+      text-align: center; }
+    }

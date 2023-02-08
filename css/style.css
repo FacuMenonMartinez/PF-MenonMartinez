@@ -2,1065 +2,751 @@
     Fuente: gris rgb(255, 241, 247)
     Fondo: bordo rgb(158,25,52)
     Footer: Negro */
-
-@font-face {
-    font-family: fuente-qatar;
-    src: url(../recursos/fuente-qatar.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: fuente-qatar;
-    color: rgb(255, 241, 247);
-}
-
-/* BODY */
-body {
-    background-color: rgb(158, 25, 52);
-    display: flex;
-    flex-direction: column;
-}
-
-/* HEADER */
-.img-header {
-    width: 7vw;
-    margin-left: 2vw;
-    margin-top: 2vh;
-}
-
-.encabezadoGeneral {
-    background-color: rgb(158, 25, 52);
-    border-bottom: 1px solid black;
-    width: 100%;
-    position: fixed;
-    z-index: +5;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    /* por modificacion de bootstrap */
-    margin: 0;
-    padding: 0;
-}
-
-.menu__seccion {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5vw;
-    margin: 4vw;
-    /* por modificacion de bootstrap */
-    color: rgb(255, 241, 247);
-}
-
-.menu__seccion--resaltado {
-    color: rgb(158, 25, 52);
-    background-color: rgb(255, 241, 247);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5vw;
-    margin: 4vw;
-    padding: 0px 10px 0px 10px;
-}
-
-li {
-    list-style-type: none;
-}
-
-.menu li:hover {
-    text-shadow: 2px 2px 15px rgb(255, 241, 247);
-}
-
-/*------------------------------ MAIN---------------------------- */
-.contenido {
-    display: flex;
-    flex-direction: column;
-}
-
-/* FONDOS DE TITULO*/
+/* TITULO*/
 .contenido__principal--index {
-    background-image: url(../recursos/argentina-campeon.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 14vh;
-}
-
-.contenido__principal--seleccionados {
-    background-image: url(../recursos/logo-seleccionados.png);
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position-x: center;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 12vh;
-}
-
-.contenido__principal--grupos {
-    background-image: url(../recursos/grupo-catar1.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 12vh;
-    /* grid-area: titulo; */
-}
-
-.contenido__principal--eliminatoria {
-    background-image: url(../recursos/pelota-final.png);
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position-x: center;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 22vh;
-}
-
-.contenido__principal--contacto {
-    background-image: url(../recursos/contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 12vh;
-
-}
-
-
-/* H1 */
-h1 {
-    font-size: 15vh;
-    /* position: relative; */
-    text-align: center;
-    padding-top: 25vh;
-    text-shadow: 10px 10px 10px black;
-}
+  background-image: url(../recursos/argentina-campeon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 85vh;
+  margin-top: 14vh; }
 
 .contenido__principal--titulo {
-    font-size: 15vh;
-    text-align: center;
-    padding: 10%;
-    text-shadow: 10px 10px 10px black;
-}
+  font-size: 15vh;
+  text-align: center;
+  padding: 10%;
+  text-shadow: 10px 10px 10px black; }
 
-
-
-h2 {
-    font-size: 6vh;
-    margin-left: 3vw;
-}
-
-h3 {
-    font-size: 5vh;
-    margin-top: 3vh;
-}
-
-/*---------------------------- -------------------INDEX----------------------------------------------------- */
-/* --------------------------CAMPEONES COPAS----------------------------- */
 .campeones {
-    margin: auto;
-    display: flex;
-    width: 95%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    animation-name: desplazamientoDiv;
-    animation-duration: 0.5s;
-    animation-iteration-count: initial;
-}
+  margin: auto;
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  animation-name: desplazamientoDiv;
+  animation-duration: 0.5s;
+  animation-iteration-count: initial; }
 
 .campeones div {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 60vh;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "campeonesLista campeonesCopa campeonesCopa ";
+  /* justify-items: center; */
+  box-shadow: 0px 2px 30px black; }
+
+.ediciones {
+  display: none; }
+
+.campeones-titulo {
+  grid-area: campeonesTitulo;
+  justify-self: flex-start; }
+
+.campeones-lista {
+  grid-area: campeonesLista;
+  align-self: center;
+  justify-self: center;
+  font-size: 4vh; }
+
+.campeones-copa {
+  grid-area: campeonesCopa;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.copaInfo {
+  justify-self: left;
+  margin-right: 1vw; }
+
+.copa {
+  height: 45vh;
+  object-fit: contain;
+  justify-self: center; }
+
+/* -----------------------------INDIVIDUALES----------------------------- */
+.individuales {
+  margin: 2vh auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.individuales div {
+  display: grid;
+  height: 50vh;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-auto-rows: 0.5fr 1fr 2fr;
+  grid-template-areas: "categoria categoria categoria" "jugador fotoJugador escudo" "informacion fotoJugador escudo";
+  box-shadow: 0px 2px 30px black;
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  animation-name: desplazamientoDiv;
+  animation-duration: 0.5s;
+  animation-iteration-count: initial; }
+
+.individuales-categoria {
+  font-size: 5vh;
+  grid-area: categoria;
+  padding-left: 2vw; }
+
+.individuales-info {
+  grid-area: informacion;
+  font-size: 3vh;
+  align-self: initial;
+  justify-self: center; }
+
+.individuales-nombre {
+  grid-area: jugador;
+  font-size: 4vh;
+  color: #9e1934;
+  transform: skewX(-15deg);
+  background-color: #fff1f7;
+  align-self: flex-end;
+  justify-self: center; }
+
+.individuales-escudo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  grid-area: escudo; }
+
+.individuales-jugador {
+  height: 95%;
+  width: 95%;
+  object-fit: contain;
+  grid-area: fotoJugador; }
+
+@keyframes desplazamientoDiv {
+  0% {
+    transform: translateX(-20px); }
+  20% {
+    transform: translateX(-16px); }
+  40% {
+    transform: translateX(-12px); }
+  60% {
+    transform: translateX(-8px); }
+  80% {
+    transform: translateX(-4); }
+  100% {
+    transform: translateX(0px); } }
+
+@media (max-width: 800px) {
+  /* -----------------INDEX MEDIANO---------------------- */
+  .campeones div {
     display: grid;
     margin: auto;
     width: 100%;
     height: 60vh;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
-        "campeonesLista campeonesCopa campeonesCopa ";
-    /* justify-items: center; */
-    box-shadow: 0px 2px 30px black;
-
-}
-
-.ediciones {
-    display: none;
-}
-
-.campeones-titulo {
-    grid-area: campeonesTitulo;
-    justify-self: flex-start;
-}
-
-.campeones-lista {
-    grid-area: campeonesLista;
-    align-self: center;
-    justify-self: center;
-    font-size: 4vh;
-}
-
-.campeones-copa {
-    grid-area: campeonesCopa;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.copaInfo {
-    justify-self: left;
-    margin-right: 1vw;
-}
-
-.copa {
-    height: 45vh;
-    object-fit: contain;
-    justify-self: center;
-
-}
-
-/* -----------------------------INDIVIDUALES----------------------------- */
-
-.individuales {
-    margin: 2vh auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.individuales div {
+    grid-template-areas: "campeonesLista campeonesCopa campeonesCopa ";
+    box-shadow: 0px 2px 30px black; }
+  .campeones-lista {
+    font-size: 3vh; }
+  .copaInfo {
+    font-size: 2.5vh; }
+  .individuales div {
     display: grid;
-    height: 50vh;
+    height: 65vh;
     width: 100%;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-auto-rows: 0.5fr 1fr 2fr;
-    grid-template-areas:
-        "categoria categoria categoria"
-        "jugador fotoJugador escudo"
-        "informacion fotoJugador escudo";
-    box-shadow: 0px 2px 30px black;
-    margin-top: 1.5vh;
-    margin-bottom: 2vh;
-    animation-name: desplazamientoDiv;
-    animation-duration: 0.5s;
-    animation-iteration-count: initial;
-}
-
-.individuales-categoria {
-    font-size: 5vh;
-    grid-area: categoria;
-    padding-left: 2vw;
-}
-
-.individuales-info {
-    grid-area: informacion;
-    font-size: 3vh;
-    align-self: initial;
-    justify-self: center;
-}
-
-.individuales-nombre {
-    grid-area: jugador;
-    font-size: 4vh;
-    color: rgb(158, 25, 52);
-    transform: skewX(-15deg);
-    background-color: rgb(255, 241, 247);
-    align-self: flex-end;
-    justify-self: center;
-}
-
-.individuales-escudo {
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr 1.5fr;
+    grid-template-areas: "categoria categoria" "fotoJugador escudo" "jugador informacion"; }
+  .individuales-jugador {
     height: 100%;
+    width: 90%;
+    object-fit: contain;
+    justify-self: center; }
+  .individuales-escudo {
+    height: 80%;
+    width: 80%;
+    justify-self: center; }
+  .individuales-nombre {
+    align-self: baseline; }
+  .individuales-info {
+    align-self: baseline; } }
+
+@media (max-width: 480px) {
+  /* --------------------INDEX------------------------ */
+  .contenido__principal--index {
+    margin-top: 17vh;
+    height: 40vh; }
+  .contenido__principal--titulo {
+    font-size: 7vh;
+    padding: 7%; }
+  h1 {
+    font-size: 6vh;
+    padding: 7%; }
+  .contenido__principal--eliminatoria h1 {
+    font-size: 40px;
+    margin: 10px; }
+  h2 {
+    display: none; }
+  .campeones {
+    width: 100%; }
+  h3 {
+    text-align: center; }
+  .campeones div {
+    display: grid;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
     width: 100%;
-    object-fit: contain;
-    grid-area: escudo;
-}
-
-.individuales-jugador {
-    height: 95%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 1fr;
+    grid-template-areas: "campeonesLista ediciones" "campeonesCopa campeonesCopa " "campeonesCopa campeonesCopa"; }
+  .ediciones {
+    display: block;
+    grid-area: ediciones;
+    font-size: 6vh;
+    align-self: center;
+    text-align: center; }
+  .campeones-lista {
+    grid-area: campeonesLista;
+    justify-self: left;
+    margin-left: 4vw; }
+  .campeones-copa {
+    align-self: initial;
+    grid-area: campeonesCopa;
+    display: flex;
+    flex-direction: column; }
+  .copaInfo {
+    text-align: center;
+    font-size: 2.5vh;
+    margin: 1vh;
+    text-shadow: 1px 1px 10px black; }
+  .individuales {
+    width: 100%; }
+  .individuales div {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2fr 0.5fr 0.3fr;
+    grid-template-areas: "categoria" "fotoJugador" "jugador" "informacion"; }
+  .individuales-escudo {
+    display: none; }
+  .individuales-nombre {
+    align-self: center; }
+  .individuales-jugador {
     width: 95%;
-    object-fit: contain;
-    grid-area: fotoJugador;
-}
+    grid-area: fotoJugador; }
+  .individuales-categoria {
+    font-size: 4vh;
+    text-align: center; } }
 
-@keyframes desplazamientoDiv {
-    0% {
-        transform: translateX(-20px);
-    }
+.contenido__principal--seleccionados {
+  background-image: url(../recursos/logo-seleccionados.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-x: center;
+  width: 100vw;
+  height: 85vh;
+  margin-top: 12vh; }
 
-    20% {
-        transform: translateX(-16px)
-    }
-
-    40% {
-        transform: translateX(-12px)
-    }
-
-    60% {
-        transform: translateX(-8px)
-    }
-
-    80% {
-        transform: translateX(-4);
-    }
-
-    100% {
-        transform: translateX(-0px)
-    }
-
-}
+.contenido__principal--grupos {
+  background-image: url(../recursos/grupo-catar1.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 85vh;
+  margin-top: 12vh;
+  /* grid-area: titulo; */ }
 
 /* ---------------------------------------------FASE DE GRUPOS-------------------------------------- */
 .faseGrupos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-template-areas:
-        "titulo titulo"
-        "posiciones posiciones";
-    height: auto;
-    margin-bottom: 3vh;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "titulo titulo" "posiciones posiciones";
+  height: auto;
+  margin-bottom: 3vh; }
 
 /* ---------------TABLA DE POSICIONES-------------- */
 .posiciones_titulo {
-    margin: 0;
-    grid-area: posicionesTitulo;
-}
+  margin: 0;
+  grid-area: posicionesTitulo; }
 
 .resutlados_titulo {
-    margin: 0;
-    grid-area: resultadosTitulo;
-}
-
+  margin: 0;
+  grid-area: resultadosTitulo; }
 
 .contenido__principal--grupos {
-    grid-area: titulo;
-}
+  grid-area: titulo; }
 
 .posiciones {
-    grid-area: posiciones;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas:
-        "posicionesTitulo resultadosTitulo"
-        "grupoA resultadosA"
-        "grupoB resultadosB"
-        "grupoC resultadosC"
-        "grupoD resultadosD"
-        "grupoE resultadosE"
-        "grupoF resultadosF"
-        "grupoG resultadosG"
-        "grupoH resultadosH"
-        "uruguay .";
-    padding-left: 6vw;
-}
+  grid-area: posiciones;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas: "posicionesTitulo resultadosTitulo" "grupoA resultadosA" "grupoB resultadosB" "grupoC resultadosC" "grupoD resultadosD" "grupoE resultadosE" "grupoF resultadosF" "grupoG resultadosG" "grupoH resultadosH" "uruguay .";
+  padding-left: 6vw; }
 
 .grupoA {
-    grid-area: grupoA;
-}
+  grid-area: grupoA; }
 
 .grupoB {
-    grid-area: grupoB;
-}
+  grid-area: grupoB; }
 
 .grupoC {
-    grid-area: grupoC;
-}
+  grid-area: grupoC; }
 
 .grupoD {
-    grid-area: grupoD;
-}
+  grid-area: grupoD; }
 
 .grupoE {
-    grid-area: grupoE;
-}
+  grid-area: grupoE; }
 
 .grupoF {
-    grid-area: grupoF;
-}
+  grid-area: grupoF; }
 
 .grupoG {
-    grid-area: grupoG;
-}
+  grid-area: grupoG; }
 
 .grupoH {
-    grid-area: grupoH;
-}
+  grid-area: grupoH; }
 
 .resultadosA {
-    grid-area: resultadosA;
-}
+  grid-area: resultadosA; }
 
 .resultadosB {
-    grid-area: resultadosB;
-}
+  grid-area: resultadosB; }
 
 .resultadosC {
-    grid-area: resultadosC;
-}
+  grid-area: resultadosC; }
 
 .resultadosD {
-    grid-area: resultadosD;
-}
+  grid-area: resultadosD; }
 
 .resultadosE {
-    grid-area: resultadosE;
-}
+  grid-area: resultadosE; }
 
 .resultadosF {
-    grid-area: resultadosF;
-}
+  grid-area: resultadosF; }
 
 .resultadosG {
-    grid-area: resultadosG;
-}
+  grid-area: resultadosG; }
 
 .resultadosH {
-    grid-area: resultadosH;
-}
+  grid-area: resultadosH; }
 
 .posiciones div {
-    display: grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "grupo pts ganados empatados perdidos dif"
-        "pais1 pts1 g1 e1 p1 dif1"
-        "pais2 pts2 g2 e2 p2 dif2"
-        "pais3 pts3 g3 e3 p3 dif3"
-        "pais4 pts4 g4 e4 p4 dif4";
-    align-content: center;
-    width: 35vw;
-    height: 25vh;
-    box-shadow: 2px 2px 30px black;
-    font-size: 1.5vw;
-    margin-top: 3vh;
-}
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "grupo pts ganados empatados perdidos dif" "pais1 pts1 g1 e1 p1 dif1" "pais2 pts2 g2 e2 p2 dif2" "pais3 pts3 g3 e3 p3 dif3" "pais4 pts4 g4 e4 p4 dif4";
+  align-content: center;
+  width: 35vw;
+  height: 25vh;
+  box-shadow: 2px 2px 30px black;
+  font-size: 1.5vw;
+  margin-top: 3vh; }
 
 .posiciones section {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "equipo1 resultado1 resultado2 equipo2"
-        "equipo3 resultado3 resultado4 equipo4"
-        "equipo5 resultado5 resultado6 equipo6 "
-        "equipo7 resultado7 resultado8 equipo8"
-        "equipo9 resultado9 resultado10 equipo10"
-        "equipo11 resultado11 resultado12 equipo12";
-    justify-items: center;
-    width: 35vw;
-    height: 25vh;
-    box-shadow: 2px 2px 30px black;
-    font-size: 1.3vw;
-    margin-top: 3vh;
-
-
-}
-
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "equipo1 resultado1 resultado2 equipo2" "equipo3 resultado3 resultado4 equipo4" "equipo5 resultado5 resultado6 equipo6 " "equipo7 resultado7 resultado8 equipo8" "equipo9 resultado9 resultado10 equipo10" "equipo11 resultado11 resultado12 equipo12";
+  justify-items: center;
+  width: 35vw;
+  height: 25vh;
+  box-shadow: 2px 2px 30px black;
+  font-size: 1.3vw;
+  margin-top: 3vh; }
 
 .grupo {
-    grid-area: grupo;
-    background-color: rgb(129, 22, 43);
-    padding-left: 0.5vw;
-}
+  grid-area: grupo;
+  background-color: #81162b;
+  padding-left: 0.5vw; }
 
 .pts {
-    grid-area: pts;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: pts;
+  background-color: #81162b; }
 
 .ganados {
-    grid-area: ganados;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: ganados;
+  background-color: #81162b; }
 
 .empatados {
-    grid-area: empatados;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: empatados;
+  background-color: #81162b; }
 
 .perdidos {
-    grid-area: perdidos;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: perdidos;
+  background-color: #81162b; }
 
 .dif {
-    grid-area: dif;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: dif;
+  background-color: #81162b; }
 
 .pais1 {
-    grid-area: pais1;
-    padding-left: 0.5vw;
-
-}
+  grid-area: pais1;
+  padding-left: 0.5vw; }
 
 .pais2 {
-    grid-area: pais2;
-    background-color: rgb(129, 22, 43);
-    padding-left: 0.5vw;
-}
+  grid-area: pais2;
+  background-color: #81162b;
+  padding-left: 0.5vw; }
 
 .pais3 {
-    grid-area: pais3;
-    padding-left: 0.5vw;
-}
+  grid-area: pais3;
+  padding-left: 0.5vw; }
 
 .pais4 {
-    grid-area: pais4;
-    background-color: rgb(129, 22, 43);
-    padding-left: 0.5vw;
-}
+  grid-area: pais4;
+  background-color: #81162b;
+  padding-left: 0.5vw; }
 
 .ganados1 {
-    grid-area: g1;
-
-}
+  grid-area: g1; }
 
 .ganados2 {
-    grid-area: g2;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: g2;
+  background-color: #81162b; }
 
 .ganados3 {
-    grid-area: g3;
-}
+  grid-area: g3; }
 
 .ganados4 {
-    grid-area: g4;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: g4;
+  background-color: #81162b; }
 
 .empatados1 {
-    grid-area: e1;
-
-}
+  grid-area: e1; }
 
 .empatados2 {
-    grid-area: e2;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: e2;
+  background-color: #81162b; }
 
 .empatados3 {
-    grid-area: e3;
-}
+  grid-area: e3; }
 
 .empatados4 {
-    grid-area: e4;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: e4;
+  background-color: #81162b; }
 
 .perdidos1 {
-    grid-area: p1;
-
-}
+  grid-area: p1; }
 
 .perdidos2 {
-    grid-area: p2;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: p2;
+  background-color: #81162b; }
 
 .perdidos3 {
-    grid-area: p3;
-}
+  grid-area: p3; }
 
 .perdidos4 {
-    grid-area: p4;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: p4;
+  background-color: #81162b; }
 
 .dif1 {
-    grid-area: dif1;
-    ;
-}
+  grid-area: dif1; }
 
 .dif2 {
-    grid-area: dif2;
-    background-color: rgb(129, 22, 43);
-    ;
-}
+  grid-area: dif2;
+  background-color: #81162b; }
 
 .dif3 {
-    grid-area: dif3;
-    ;
-}
+  grid-area: dif3; }
 
 .dif4 {
-    grid-area: dif4;
-    background-color: rgb(129, 22, 43);
-    ;
-}
+  grid-area: dif4;
+  background-color: #81162b; }
 
 .pts1 {
-    grid-area: pts1;
-}
+  grid-area: pts1; }
 
 .pts2 {
-    grid-area: pts2;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: pts2;
+  background-color: #81162b; }
 
 .pts3 {
-    grid-area: pts3;
-}
+  grid-area: pts3; }
 
 .pts4 {
-    grid-area: pts4;
-    background-color: rgb(129, 22, 43);
-}
+  grid-area: pts4;
+  background-color: #81162b; }
 
 .uruguay {
-    padding: 2vh 8vw 0 0vw;
-    font-size: 2.2vh;
-    font-style: italic;
-    grid-area: uruguay;
-}
+  padding: 2vh 8vw 0 0vw;
+  font-size: 2.2vh;
+  font-style: italic;
+  grid-area: uruguay; }
 
 /* ---------------------------TABLAS DE  RESULTADOS-------------------------- */
-
 .equipo1 {
-    grid-area: equipo1;
-}
+  grid-area: equipo1; }
 
 .equipo2 {
-    grid-area: equipo2;
-}
+  grid-area: equipo2; }
 
 .equipo3 {
-    grid-area: equipo3;
-}
+  grid-area: equipo3; }
 
 .equipo4 {
-    grid-area: equipo4;
-}
+  grid-area: equipo4; }
 
 .equipo5 {
-    grid-area: equipo5;
-}
+  grid-area: equipo5; }
 
 .equipo6 {
-    grid-area: equipo6;
-}
+  grid-area: equipo6; }
 
 .equipo7 {
-    grid-area: equipo7;
-}
+  grid-area: equipo7; }
 
 .equipo8 {
-    grid-area: equipo8;
-}
+  grid-area: equipo8; }
 
 .equipo9 {
-    grid-area: equipo9;
-}
+  grid-area: equipo9; }
 
 .equipo10 {
-    grid-area: equipo10;
-}
+  grid-area: equipo10; }
 
 .equipo11 {
-    grid-area: equipo11;
-}
+  grid-area: equipo11; }
 
 .equipo12 {
-    grid-area: equipo12;
-}
+  grid-area: equipo12; }
 
 .resultado1 {
-    grid-area: resultado1;
-}
+  grid-area: resultado1; }
 
 .resultado2 {
-    grid-area: resultado2;
-}
+  grid-area: resultado2; }
 
 .resultado3 {
-    grid-area: resultado3;
-}
+  grid-area: resultado3; }
 
 .resultado4 {
-    grid-area: resultado4;
-}
+  grid-area: resultado4; }
 
 .resultado5 {
-    grid-area: resultado5;
-}
+  grid-area: resultado5; }
 
 .resultado6 {
-    grid-area: resultado6;
-}
+  grid-area: resultado6; }
 
 .resultado7 {
-    grid-area: resultado7;
-}
+  grid-area: resultado7; }
 
 .resultado8 {
-    grid-area: resultado8;
-}
+  grid-area: resultado8; }
 
 .resultado9 {
-    grid-area: resultado9;
-}
+  grid-area: resultado9; }
 
 .resultado10 {
-    grid-area: resultado10;
-}
+  grid-area: resultado10; }
 
 .resultado11 {
-    grid-area: resultado11;
-}
+  grid-area: resultado11; }
 
 .resultado12 {
-    grid-area: resultado12;
-}
+  grid-area: resultado12; }
+
+/*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
+@media (max-width: 800px) {
+  /*---------------------- GRUPOS MEDIANO-------------------- */
+  .contenido__principal--grupos {
+    height: 60vh; }
+  .uruguay {
+    padding: 2vh 1vw 0 7vw; }
+  .posiciones {
+    padding-left: 0;
+    justify-items: center;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; }
+  .faseGrupos {
+    margin-bottom: -7vh; } }
+
+/* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
+@media (max-width: 480px) {
+  /* ----------------------FASE DE GRUPOS------------------- */
+  .faseGrupos {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  .contenido__principal--grupos {
+    height: 32vh;
+    display: flex;
+    justify-content: center; }
+  .contenido__principal--grupos h1 {
+    align-self: center;
+    justify-self: center; }
+  .posiciones_titulo {
+    display: block;
+    font-size: 3vh; }
+  .resultados_titulo {
+    display: block;
+    font-size: 3vh; }
+  .posiciones {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "grupoA" "resultadosA" "grupoB" "resultadosB" "grupoC" "resultadosC" "grupoD" "resultadosD" "grupoE" "resultadosE" "grupoF" "resultadosF" "grupoG" "resultadosG" "grupoH" "resultadosH" "uruguay";
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10vh; }
+  .posiciones_titulo {
+    display: none; }
+  .resultados_titulo {
+    display: none; }
+  .posiciones section {
+    width: 100%;
+    font-size: 2.5vh;
+    height: 30vh;
+    border-bottom: 1.5px solid #fff1f7; }
+  .posiciones div {
+    width: 100%;
+    font-size: 3vh;
+    height: 30vh;
+    margin-top: 4vh; }
+  .uruguay {
+    margin-left: 2vw;
+    padding: 0; } }
+
+.contenido__principal--eliminatoria {
+  background-image: url(../recursos/pelota-final.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-x: center;
+  width: 100vw;
+  height: 85vh;
+  margin-top: 22vh; }
+
+/* FONDOS DE TITULO*/
+.contenido__principal--contacto {
+  background-image: url(../recursos/contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 85vh;
+  margin-top: 12vh; }
+
+@font-face {
+  font-family: fuente-qatar;
+  src: url(../recursos/fuente-qatar.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fuente-qatar;
+  color: #fff1f7; }
+
+/* HEADER */
+.img-header {
+  width: 7vw;
+  margin-left: 2vw;
+  margin-top: 2vh; }
+
+.encabezadoGeneral {
+  background-color: #9e1934;
+  border-bottom: 1px solid black;
+  width: 100%;
+  position: fixed;
+  z-index: +5; }
+
+nav {
+  display: flex;
+  align-items: center; }
+
+.menu {
+  display: flex;
+  flex-direction: row; }
+
+.menu__seccion {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin: 4vw; }
+
+.menu__seccion--resaltado {
+  color: #9e1934;
+  background-color: #fff1f7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin: 4vw;
+  padding: 0px 10px 0px 10px; }
+
+li {
+  list-style-type: none; }
+
+.menu li:hover {
+  text-shadow: 2px 2px 15px #fff1f7; }
+
+/*------------------------------ MAIN---------------------------- */
+.contenido {
+  display: flex;
+  flex-direction: column; }
+
+/* BODY */
+body {
+  background-color: #9e1934;
+  display: flex;
+  flex-direction: column; }
+
+/* TITULOS GENERALES */
+h1 {
+  font-size: 15vh;
+  /* position: relative; */
+  text-align: center;
+  padding-top: 25vh;
+  text-shadow: 10px 10px 10px black; }
+
+h2 {
+  font-size: 6vh;
+  margin-left: 3vw; }
+
+h3 {
+  font-size: 5vh;
+  margin-top: 3vh; }
 
 /*--------------------- --------------------------FOOTER------------------------------------------ */
 footer {
-    height: 100px;
-    background-color: black;
-}
+  height: 100px;
+  background-color: black; }
 
 /*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
-@media(max-width:800px) {
-
-    /* -----------------------------HEADER----------------------------- */
-    .menu__seccion {
-        font-size: 2.7vh;
-        margin: 2vw;
-    }
-
-    .menu__seccion--resaltado {
-        font-size: 2.7vh;
-        margin: 2vw;
-    }
-
-    h2 {
-        font-size: 5vh;
-    }
-
-    h3 {
-        font-size: 4vh;
-    }
-
-    /* -----------------INDEX MEDIANO---------------------- */
-    .campeones div {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        height: 60vh;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "campeonesLista campeonesCopa campeonesCopa ";
-        box-shadow: 0px 2px 30px black;
-
-    }
-
-    .campeones-lista {
-        font-size: 3vh;
-
-    }
-
-    .copaInfo {
-        font-size: 2.5vh;
-
-    }
-
-    .individuales div {
-        display: grid;
-        height: 65vh;
-        width: 100%;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 0.5fr 2fr 1.5fr;
-        grid-template-areas:
-            "categoria categoria"
-            "fotoJugador escudo"
-            "jugador informacion"
-    }
-
-    .individuales-jugador {
-        height: 100%;
-        width: 90%;
-        object-fit: contain;
-        justify-self: center;
-
-    }
-
-    .individuales-escudo {
-        height: 80%;
-        width: 80%;
-        justify-self: center;
-    }
-
-    .individuales-nombre {
-        align-self: baseline;
-    }
-
-    .individuales-info {
-        align-self: baseline;
-    }
-
-    /*---------------------- GRUPOS MEDIANO-------------------- */
-
-    .contenido__principal--grupos {
-        height: 60vh;
-    }
-
-    .uruguay {
-        padding: 2vh 1vw 0 7vw;
-    }
-
-    .posiciones {
-        padding-left: 0;
-        justify-items: center;
-        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr
-    }
-
-    .faseGrupos {
-        margin-bottom: -7vh;
-    }
-}
+@media (max-width: 800px) {
+  /* -----------------------------HEADER----------------------------- */
+  .menu__seccion {
+    font-size: 2.7vh;
+    margin: 2vw; }
+  .menu__seccion--resaltado {
+    font-size: 2.7vh;
+    margin: 2vw; }
+  h2 {
+    font-size: 5vh; }
+  h3 {
+    font-size: 4vh; } }
 
 /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
-@media(max-width:480px) {
-
-    /* ------------------HEADER------------------------ */
-    .encabezadoGeneral {
-        width: 100%;
-    }
-
-    nav {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .img-header {
-        width: 60px;
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu__seccion {
-        font-size: 3vw;
-        padding: 0px 3px 0px 3px;
-        margin: 3px;
-    }
-
-    .menu__seccion--resaltado {
-
-        font-size: 3vw;
-        margin: 3px;
-        padding: 0px 10px 0px 10px;
-    }
-
-    /* --------------------INDEX------------------------ */
-    .contenido__principal--index {
-        margin-top: 17vh;
-        height: 40vh;
-    }
-
-    .contenido__principal--titulo {
-        font-size: 7vh;
-        padding: 7%;
-    }
-
-    h1 {
-        font-size: 6vh;
-        padding: 7%;
-    }
-
-    .contenido__principal--eliminatoria h1 {
-        font-size: 40px;
-        margin: 10px;
-    }
-
-    h2 {
-        display: none;
-    }
-
-    .campeones {
-        width: 100%;
-    }
-
-    h3 {
-        text-align: center;
-    }
-
-    .campeones div {
-        display: grid;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: auto;
-        width: 100%;
-        height: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.7fr 1fr 1fr;
-        grid-template-areas:
-            "campeonesLista ediciones"
-            "campeonesCopa campeonesCopa "
-            "campeonesCopa campeonesCopa";
-    }
-
-    .ediciones {
-        display: block;
-        grid-area: ediciones;
-        font-size: 6vh;
-        align-self: center;
-        text-align: center;
-    }
-
-    .campeones-lista {
-        grid-area: campeonesLista;
-        justify-self: left;
-        margin-left: 4vw;
-    }
-
-    .campeones-copa {
-        align-self: initial;
-        grid-area: campeonesCopa;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .copaInfo {
-        text-align: center;
-        font-size: 2.5vh;
-        margin: 1vh;
-        text-shadow: 1px 1px 10px black;
-    }
-
-    .individuales {
-        width: 100%;
-    }
-
-    .individuales div {
-        display: grid;
-        height: auto;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 2fr 0.5fr 0.3fr;
-        grid-template-areas:
-            "categoria"
-            "fotoJugador"
-            "jugador"
-            "informacion"
-    }
-
-    .individuales-escudo {
-        display: none;
-    }
-
-    .individuales-nombre {
-        align-self: center;
-
-    }
-
-    .individuales-jugador {
-        width: 95%;
-        grid-area: fotoJugador;
-    }
-
-    .individuales-categoria {
-        font-size: 4vh;
-        text-align: center;
-    }
-
-    /* ----------------------FASE DE GRUPOS------------------- */
-    .faseGrupos {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenido__principal--grupos {
-        height: 32vh;
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenido__principal--grupos h1 {
-        align-self: center;
-        justify-self: center;
-
-    }
-
-    .posiciones_titulo {
-        display: block;
-        font-size: 3vh;
-    }
-
-    .resultados_titulo {
-        display: block;
-        font-size: 3vh;
-    }
-
-    .posiciones {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-        grid-template-areas:
-            "grupoA"
-            "resultadosA"
-            "grupoB"
-            "resultadosB"
-            "grupoC"
-            "resultadosC"
-            "grupoD"
-            "resultadosD"
-            "grupoE"
-            "resultadosE"
-            "grupoF"
-            "resultadosF"
-            "grupoG"
-            "resultadosG"
-            "grupoH"
-            "resultadosH"
-            "uruguay";
-        width: 100%;
-        padding: 0;
-        margin-bottom: 10vh;
-    }
-
-    .posiciones_titulo {
-        display: none;
-    }
-
-    .resultados_titulo {
-        display: none;
-    }
-
-    .posiciones section {
-        width: 100%;
-        font-size: 2.5vh;
-        height: 30vh;
-        border-bottom: 1.5px solid rgb(255, 241, 247);
-    }
-
-    .posiciones div {
-        width: 100%;
-        font-size: 3vh;
-        height: 30vh;
-        margin-top: 4vh;
-    }
-
-    .uruguay {
-        margin-left: 2vw;
-        padding: 0;
-    }
-
-
-}
+@media (max-width: 480px) {
+  /* ------------------HEADER------------------------ */
+  .encabezadoGeneral {
+    width: 100%; }
+  nav {
+    justify-content: center;
+    flex-direction: column; }
+  .img-header {
+    width: 60px;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .menu {
+    display: flex;
+    flex-direction: row; }
+  .menu__seccion {
+    font-size: 3vw;
+    padding: 0px 3px 0px 3px;
+    margin: 3px; }
+  .menu__seccion--resaltado {
+    font-size: 3vw;
+    margin: 3px;
+    padding: 0px 10px 0px 10px; } }
