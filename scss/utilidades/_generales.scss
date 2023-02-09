@@ -10,6 +10,8 @@
 
       /* HEADER */
   .img-header {
+    // Sacar estilo bootstrap
+    vertical-align: initial;
     width: 7vw;
     margin-left: 2vw;
     margin-top: 2vh; }
@@ -26,10 +28,15 @@
     align-items: center; }
   
   .menu {
+    // eliminar estilo de bootstrap
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row; }
   
   .menu__seccion {
+    // eliminar color de bootstrap
+    color: rgb(255, 241, 247);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5vw;

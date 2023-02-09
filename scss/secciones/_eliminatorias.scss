@@ -7,3 +7,12 @@
     width: 100vw;
     height: 85vh;
     margin-top: 22vh; }
+
+    // SACANDO ESTILO DE BOOTSTRAP PREDETERMINADO
+    .menu_seccion{
+        color: rgb(255, 241, 247)!important;
+    }
+    menu{
+        margin: 0;
+        padding: 0;
+    }

@@ -1,6 +1,6 @@
 /* Colores
     Fuente: gris rgb(255, 241, 247)
-    Fondo: bordo rgb(158,25,52)
+    Fondo: bordo 
     Footer: Negro */
 /* TITULO*/
 .contenido__principal--index {
@@ -620,6 +620,13 @@
   height: 85vh;
   margin-top: 22vh; }
 
+.menu_seccion {
+  color: #fff1f7 !important; }
+
+menu {
+  margin: 0;
+  padding: 0; }
+
 /* FONDOS DE TITULO*/
 .contenido__principal--contacto {
   background-image: url(../recursos/contacto.jpg);
@@ -641,6 +648,7 @@
 
 /* HEADER */
 .img-header {
+  vertical-align: initial;
   width: 7vw;
   margin-left: 2vw;
   margin-top: 2vh; }
@@ -657,10 +665,13 @@ nav {
   align-items: center; }
 
 .menu {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row; }
 
 .menu__seccion {
+  color: #fff1f7;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5vw;
