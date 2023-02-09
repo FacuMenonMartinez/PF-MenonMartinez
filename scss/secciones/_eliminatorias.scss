@@ -6,13 +6,88 @@
     background-position-x: center;
     width: 100vw;
     height: 85vh;
-    margin-top: 22vh; }
+    margin-top: 22vh;
+}
 
-    // SACANDO ESTILO DE BOOTSTRAP PREDETERMINADO
-    .menu_seccion{
-        color: rgb(255, 241, 247)!important;
-    }
-    menu{
-        margin: 0;
-        padding: 0;
-    }
+// SUBTITULOS
+.fase{
+    font-size: 7vh;
+    margin-left: 1vw;
+}
+
+// SACANDO ESTILO DE BOOTSTRAP PREDETERMINADO
+.acordionPartido{
+        // el important es para que se mantenga una vez se despliega
+    background-color: rgb(134, 6, 25)!important;
+    margin: 0 1vw 0 1vw;
+}
+
+.botonPartido{
+    // el important es para que se mantenga una vez se despliega
+    font-size: 2rem !important;
+    background-color: rgb(134, 6, 25)!important;
+    color: rgb(255, 241, 247)!important;
+    box-shadow: none !important;}
+
+
+// Grilla de partidos
+.grillaDePartido {
+    background-color: rgb(158, 25, 52);
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+        "escudo1 marcador escudo2"
+        "escudo1 marcador escudo2"
+        "estadio estadio estadio"
+        "gol1 . gol2"
+        "resumen resumen resumen";
+    align-items: center;
+    justify-items: center;
+    margin: 2vw;
+
+}
+
+// Datos de partido
+.escudo1 {
+    grid-area: escudo1;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.escudo2 {
+    grid-area: escudo2;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.marcador1 {
+    grid-area: marcador;
+
+}
+
+.goles1 {
+    grid-area: gol1;
+    font-size: 1.5rem;
+
+}
+
+.goles2 {
+    grid-area: gol2;
+    font-size: 1.5rem;
+
+}
+
+.estadio {
+    grid-area: estadio;
+    justify-self: left;
+
+}
+
+.resumen {
+    grid-area: resumen;
+    color: rgb(255, 241, 247);
+    font-size: 1.5rem;
+}

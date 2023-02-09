@@ -1,6 +1,6 @@
 /* Colores
     Fuente: gris rgb(255, 241, 247)
-    Fondo: bordo 
+    Fondo: bordo rgb(158, 25, 52)
     Footer: Negro */
 /* TITULO*/
 .contenido__principal--index {
@@ -620,12 +620,61 @@
   height: 85vh;
   margin-top: 22vh; }
 
-.menu_seccion {
-  color: #fff1f7 !important; }
+.fase {
+  font-size: 7vh;
+  margin-left: 1vw; }
 
-menu {
-  margin: 0;
-  padding: 0; }
+.acordionPartido {
+  background-color: #860619 !important;
+  margin: 0 1vw 0 1vw; }
+
+.botonPartido {
+  font-size: 2rem !important;
+  background-color: #860619 !important;
+  color: #fff1f7 !important;
+  box-shadow: none !important; }
+
+.grillaDePartido {
+  background-color: #9e1934;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr;
+  grid-template-areas: "escudo1 marcador escudo2" "escudo1 marcador escudo2" "estadio estadio estadio" "gol1 . gol2" "resumen resumen resumen";
+  align-items: center;
+  justify-items: center;
+  margin: 2vw; }
+
+.escudo1 {
+  grid-area: escudo1;
+  width: 70%;
+  height: 70%;
+  object-fit: contain; }
+
+.escudo2 {
+  grid-area: escudo2;
+  width: 70%;
+  height: 70%;
+  object-fit: contain; }
+
+.marcador1 {
+  grid-area: marcador; }
+
+.goles1 {
+  grid-area: gol1;
+  font-size: 1.5rem; }
+
+.goles2 {
+  grid-area: gol2;
+  font-size: 1.5rem; }
+
+.estadio {
+  grid-area: estadio;
+  justify-self: left; }
+
+.resumen {
+  grid-area: resumen;
+  color: #fff1f7;
+  font-size: 1.5rem; }
 
 /* FONDOS DE TITULO*/
 .contenido__principal--contacto {
