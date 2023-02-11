@@ -8,34 +8,38 @@
     height: 85vh;
     margin-top: 22vh;
 }
-
 // SUBTITULOS
-.fase{
+.fase {
     font-size: 7vh;
-    margin-left: 1vw;
+    text-align: center;
 }
 
 // SACANDO ESTILO DE BOOTSTRAP PREDETERMINADO
-.acordionPartido{
-        // el important es para que se mantenga una vez se despliega
-    background-color: rgb(134, 6, 25)!important;
-    margin: 0 1vw 0 1vw;
+.acordionPartido {
+    // el important es para que se mantenga una vez se despliega
+    background-color: rgb(134, 6, 25) !important;
+    margin: 0 1vw 1vw 1vw;
+    display: grid;
+    align-content: start;
+    border: none!important;
+    box-shadow: 1px 0px 5px rgb(255, 241, 247);
 }
 
-.botonPartido{
+.botonPartido {
     // el important es para que se mantenga una vez se despliega
     font-size: 2rem !important;
-    background-color: rgb(134, 6, 25)!important;
-    color: rgb(255, 241, 247)!important;
-    box-shadow: none !important;}
+    background-color: rgb(134, 6, 25) !important;
+    color: $color-letra !important;
+    box-shadow: none !important;
+}
 
 
 // Grilla de partidos
 .grillaDePartido {
-    background-color: rgb(158, 25, 52);
+    background-color: $color-fondo;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:
         "escudo1 marcador escudo2"
         "escudo1 marcador escudo2"
@@ -44,8 +48,7 @@
         "resumen resumen resumen";
     align-items: center;
     justify-items: center;
-    margin: 2vw;
-
+    margin: 1vw;
 }
 
 // Datos de partido
@@ -65,6 +68,7 @@
 
 .marcador1 {
     grid-area: marcador;
+    font-size: 3rem;
 
 }
 
@@ -88,6 +92,6 @@
 
 .resumen {
     grid-area: resumen;
-    color: rgb(255, 241, 247);
+    color: $color-letra;
     font-size: 1.5rem;
 }

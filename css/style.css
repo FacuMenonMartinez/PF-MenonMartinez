@@ -622,11 +622,15 @@
 
 .fase {
   font-size: 7vh;
-  margin-left: 1vw; }
+  text-align: center; }
 
 .acordionPartido {
   background-color: #860619 !important;
-  margin: 0 1vw 0 1vw; }
+  margin: 0 1vw 1vw 1vw;
+  display: grid;
+  align-content: start;
+  border: none !important;
+  box-shadow: 1px 0px 5px #fff1f7; }
 
 .botonPartido {
   font-size: 2rem !important;
@@ -638,11 +642,11 @@
   background-color: #9e1934;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas: "escudo1 marcador escudo2" "escudo1 marcador escudo2" "estadio estadio estadio" "gol1 . gol2" "resumen resumen resumen";
   align-items: center;
   justify-items: center;
-  margin: 2vw; }
+  margin: 1vw; }
 
 .escudo1 {
   grid-area: escudo1;
@@ -657,7 +661,8 @@
   object-fit: contain; }
 
 .marcador1 {
-  grid-area: marcador; }
+  grid-area: marcador;
+  font-size: 3rem; }
 
 .goles1 {
   grid-area: gol1;
