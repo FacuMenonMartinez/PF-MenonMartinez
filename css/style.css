@@ -247,9 +247,60 @@
   background-repeat: no-repeat;
   background-size: 35%;
   background-position-x: center;
+  background-position-y: 100%;
   width: 100vw;
-  height: 85vh;
-  margin-top: 12vh; }
+  height: 85vh; }
+
+.equipos {
+  margin-bottom: 3vh; }
+  .equipos h3 {
+    margin-left: 2.5vw;
+    font-size: 3rem; }
+
+.infoEquipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-areas: "pais escudo" "jugadores escudo" "jugadores camiseta" "dt camiseta";
+  width: 95%;
+  height: 80vh;
+  box-shadow: 2px 2px 10px black;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh; }
+
+.pais {
+  grid-area: pais;
+  font-size: 2.5rem;
+  justify-self: center;
+  align-self: center; }
+
+.listaJugadores {
+  grid-area: jugadores;
+  columns: 2;
+  padding-left: 1vw; }
+
+.sEscudo {
+  grid-area: escudo;
+  overflow: visible;
+  justify-self: center;
+  align-self: center;
+  height: 80%; }
+
+.sCamiseta {
+  grid-area: camiseta;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+  height: 95%;
+  width: 70%;
+  border: 2px solid #fff1f7; }
+
+.dt {
+  grid-area: dt;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  align-self: initial; }
 
 .contenido__principal--grupos {
   background-image: url(../recursos/grupo-catar1.jpg);
