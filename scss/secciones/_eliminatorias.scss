@@ -1,13 +1,21 @@
 // FONDO DE TITULO
 .contenido__principal--eliminatoria {
     background-image: url(../recursos/pelota-final.png);
-    background-repeat: no-repeat;
-    background-size: 35%;
     background-position-x: center;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 22vh;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    max-height: 100vh;
+    background-position-y: 20vh;
+    h1 {
+        font-size: 15vh;
+        text-align: center;
+        padding-top: 45vh;
+        text-shadow: 10px 10px 10px black;
+    }
 }
+
 // SUBTITULOS
 .fase {
     font-size: 7vh;
@@ -21,7 +29,7 @@
     margin: 0 1vw 1vw 1vw;
     display: grid;
     align-content: start;
-    border: none!important;
+    border: none !important;
     box-shadow: 1px 0px 5px rgb(255, 241, 247);
 }
 

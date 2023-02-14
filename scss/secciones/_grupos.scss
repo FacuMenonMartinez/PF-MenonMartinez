@@ -2,10 +2,21 @@
 .contenido__principal--grupos {
     background-image: url(../recursos/grupo-catar1.jpg);
     background-size: cover;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 12vh;
-    /* grid-area: titulo; */ }
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 95vh;
+    max-height: 100vh;
+    // margin-top: 14vh;
+    background-position-y: 15vh;
+
+    /* grid-area: titulo; */
+    h1 {
+      font-size: 15vh;
+      text-align: center;
+      padding-top: 45vh;
+      text-shadow: 10px 10px 10px black;
+  }
+  }
 
     // CONTENIDO
      /* ---------------------------------------------FASE DE GRUPOS-------------------------------------- */
@@ -330,8 +341,7 @@
       padding-left: 0;
       justify-items: center;
       grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; }
-    .faseGrupos {
-      margin-bottom: -7vh; } }
+}
         /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
   @media (max-width: 480px) {
   
@@ -346,7 +356,8 @@
       justify-content: center; }
     .contenido__principal--grupos h1 {
       align-self: center;
-      justify-self: center; }
+      justify-self: center;
+      padding-top: 20vh; }
     .posiciones_titulo {
       display: block;
       font-size: 3vh; }
@@ -375,7 +386,7 @@
    "uruguay";
       width: 100%;
       padding: 0;
-      margin-bottom: 10vh; }
+  }
     .posiciones_titulo {
       display: none; }
     .resultados_titulo {

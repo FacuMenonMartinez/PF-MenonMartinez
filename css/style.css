@@ -5,7 +5,7 @@
 /* TITULO*/
 .contenido__principal--index {
   background-image: url(../recursos/argentina-campeon.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -138,6 +138,8 @@
 
 @media (max-width: 800px) {
   /* -----------------INDEX MEDIANO---------------------- */
+  .contenido__principal--index {
+    background-position-y: 15vh; }
   .campeones div {
     display: grid;
     margin: auto;
@@ -153,7 +155,8 @@
     font-size: 2.5vh; }
   .individuales div {
     display: grid;
-    height: 65vh;
+    min-height: 70vh;
+    max-height: 80vh;
     width: 100%;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 0.5fr 2fr 1.5fr;
@@ -175,14 +178,11 @@
 @media (max-width: 480px) {
   /* --------------------INDEX------------------------ */
   .contenido__principal--index {
-    margin-top: 17vh;
-    height: 40vh; }
+    margin-top: 3vh;
+    max-height: 50vh; }
   .contenido__principal--titulo {
     font-size: 7vh;
-    padding: 7%; }
-  h1 {
-    font-size: 6vh;
-    padding: 7%; }
+    padding-top: 16vh; }
   .contenido__principal--eliminatoria h1 {
     font-size: 40px;
     margin: 10px; }
@@ -244,12 +244,18 @@
 
 .contenido__principal--seleccionados {
   background-image: url(../recursos/logo-seleccionados.png);
-  background-repeat: no-repeat;
-  background-size: 35%;
   background-position-x: center;
-  background-position-y: 100%;
-  width: 100vw;
-  height: 85vh; }
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 80vh;
+  max-height: 100vh;
+  background-position-y: 15vh; }
+  .contenido__principal--seleccionados h1 {
+    font-size: 15vh;
+    text-align: center;
+    padding-top: 40vh;
+    text-shadow: 10px 10px 10px black; }
 
 .equipos {
   margin-bottom: 3vh; }
@@ -305,10 +311,17 @@
 .contenido__principal--grupos {
   background-image: url(../recursos/grupo-catar1.jpg);
   background-size: cover;
-  width: 100vw;
-  height: 85vh;
-  margin-top: 12vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 95vh;
+  max-height: 100vh;
+  background-position-y: 15vh;
   /* grid-area: titulo; */ }
+  .contenido__principal--grupos h1 {
+    font-size: 15vh;
+    text-align: center;
+    padding-top: 45vh;
+    text-shadow: 10px 10px 10px black; }
 
 /* ---------------------------------------------FASE DE GRUPOS-------------------------------------- */
 .faseGrupos {
@@ -613,9 +626,7 @@
   .posiciones {
     padding-left: 0;
     justify-items: center;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; }
-  .faseGrupos {
-    margin-bottom: -7vh; } }
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; } }
 
 /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
 @media (max-width: 480px) {
@@ -630,7 +641,8 @@
     justify-content: center; }
   .contenido__principal--grupos h1 {
     align-self: center;
-    justify-self: center; }
+    justify-self: center;
+    padding-top: 20vh; }
   .posiciones_titulo {
     display: block;
     font-size: 3vh; }
@@ -642,8 +654,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas: "grupoA" "resultadosA" "grupoB" "resultadosB" "grupoC" "resultadosC" "grupoD" "resultadosD" "grupoE" "resultadosE" "grupoF" "resultadosF" "grupoG" "resultadosG" "grupoH" "resultadosH" "uruguay";
     width: 100%;
-    padding: 0;
-    margin-bottom: 10vh; }
+    padding: 0; }
   .posiciones_titulo {
     display: none; }
   .resultados_titulo {
@@ -664,12 +675,18 @@
 
 .contenido__principal--eliminatoria {
   background-image: url(../recursos/pelota-final.png);
-  background-repeat: no-repeat;
-  background-size: 35%;
   background-position-x: center;
-  width: 100vw;
-  height: 85vh;
-  margin-top: 22vh; }
+  background-size: 30%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 80vh;
+  max-height: 100vh;
+  background-position-y: 20vh; }
+  .contenido__principal--eliminatoria h1 {
+    font-size: 15vh;
+    text-align: center;
+    padding-top: 45vh;
+    text-shadow: 10px 10px 10px black; }
 
 .fase {
   font-size: 7vh;
@@ -735,11 +752,17 @@
 /* FONDOS DE TITULO*/
 .contenido__principal--contacto {
   background-image: url(../recursos/contacto.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 85vh;
-  margin-top: 12vh; }
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 90vh;
+  max-height: 100vh;
+  background-position-y: 20vh; }
+  .contenido__principal--contacto h1 {
+    font-size: 15vh;
+    text-align: center;
+    padding-top: 45vh;
+    text-shadow: 10px 10px 10px black; }
 
 @font-face {
   font-family: fuente-qatar;
@@ -810,13 +833,6 @@ body {
   flex-direction: column; }
 
 /* TITULOS GENERALES */
-h1 {
-  font-size: 15vh;
-  /* position: relative; */
-  text-align: center;
-  padding-top: 25vh;
-  text-shadow: 10px 10px 10px black; }
-
 h2 {
   font-size: 6vh;
   margin-left: 3vw; }

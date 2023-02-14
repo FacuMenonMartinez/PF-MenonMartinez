@@ -1,13 +1,21 @@
 // FONDO DE TITULO
 .contenido__principal--seleccionados {
     background-image: url(../recursos/logo-seleccionados.png);
-    background-repeat: no-repeat;
-    background-size: 35%;
     background-position-x: center;
-    background-position-y: 100%;
-    width: 100vw;
-    height: 85vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    max-height: 100vh;
+    // margin-top: 14vh;
+    background-position-y: 15vh;
     // margin-top: 12vh;
+    h1 {
+        font-size: 15vh;
+        text-align: center;
+        padding-top: 40vh;
+        text-shadow: 10px 10px 10px black;
+    }
 
 }
 .equipos{
