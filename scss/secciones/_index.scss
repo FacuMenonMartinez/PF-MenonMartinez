@@ -11,8 +11,10 @@
 
 .contenido__principal--titulo {
     font-size: 15vh;
+    position: relative;
+    top: 50vh;
     text-align: center;
-    padding-top: 20%;
+    // padding-top: 20%;
     text-shadow: 10px 10px 10px black;
 }
 
@@ -173,6 +175,9 @@
     .contenido__principal--index {
         background-size: contain;
         background-position-y: 15vh;
+        h1{
+            top: 30vh;
+        }
     }
     .campeones div {
         display: grid;
@@ -231,13 +236,14 @@
   
     /* --------------------INDEX------------------------ */
     .contenido__principal--index {
-        min-height: 70vh;
+        min-height: 50vh;
     background-position-y: 17vh;
-}
-    .contenido__principal--titulo {
-      font-size: 7vh;
-      padding-top: 27vh;
+    h1{
+        font-size: 5vh;
+
     }
+}
+
     .contenido__principal--eliminatoria h1 {
       font-size: 40px;
       margin: 10px; }

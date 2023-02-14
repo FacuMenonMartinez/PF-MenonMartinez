@@ -13,8 +13,9 @@
 
 .contenido__principal--titulo {
   font-size: 15vh;
+  position: relative;
+  top: 50vh;
   text-align: center;
-  padding-top: 20%;
   text-shadow: 10px 10px 10px black; }
 
 .campeones {
@@ -142,6 +143,8 @@
   .contenido__principal--index {
     background-size: contain;
     background-position-y: 15vh; }
+    .contenido__principal--index h1 {
+      top: 30vh; }
   .campeones div {
     display: grid;
     margin: auto;
@@ -180,11 +183,10 @@
 @media (max-width: 500px) {
   /* --------------------INDEX------------------------ */
   .contenido__principal--index {
-    min-height: 70vh;
+    min-height: 50vh;
     background-position-y: 17vh; }
-  .contenido__principal--titulo {
-    font-size: 7vh;
-    padding-top: 27vh; }
+    .contenido__principal--index h1 {
+      font-size: 5vh; }
   .contenido__principal--eliminatoria h1 {
     font-size: 40px;
     margin: 10px; }
@@ -251,7 +253,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 80vh;
   max-height: 100vh;
   background-position-y: 15vh; }
   .contenido__principal--seleccionados h1 {

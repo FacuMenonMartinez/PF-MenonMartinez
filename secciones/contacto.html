@@ -42,32 +42,61 @@
             <h1>Contacto</h1>
         </section>
         <form action="#" method="get">
-            <input type="text" placeholder="Nombre" name="nombre">
-            <br><br>
-            <input type="text" placeholder="Apellido" name="apellido">
-            <br><br>
-            <input type="email" placeholder="Email" name="email">
-            <br><br>
-            <select name="mejor-eliminatoria">
-                <option>Mejor Eliminatoria</option>
-                <option value="conmebol">CONMEBOL</option>
-                <option value="uefa">UEFA</option>
-                <option value="concacaf">CONCACAF</option>
-                <option value="afc">AFC</option>
-                <option value="ofc">OFC</option>
-                <option value="caf">CAF</option>
-            </select>
-            <br><br>
-            <textarea name="mejor-gol" placeholder="¿Cuál fue el mejor gol?" cols="30" rows="10"></textarea>
-            <br><br>
-            <span>¿Querés recibir actualizaciones?</span>
-            <span>Si</span>
-            <input type="radio" value="acepto" name="radio">
-            <span>No</span>
-            <input type="radio" value="no-acepto" name="radio">
-            <br><br>
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar Informacion">
+            <section class="encuesta">
+                <input type="text" placeholder="¿Quién fue el mejor jugador?" name="mejorJugador" class="pregunta1">
+                <input type="text" placeholder="Quién fue el mejor arquero?" name="mejorArquero" class="pregunta2">
+                <input type="text" placeholder="¿Quién fue el jugador decepción?" name="peorJugador" class="pregunta3">
+                <input type="text" placeholder="¿Cuál fue la camiseta más linda?" name="mejorCamiseta"
+                    class="pregunta4">
+                <input type="text" placeholder="¿Cuál fue la camiseta más fea?" name="peorCamiseta" class="pregunta5">
+                <input type="text" placeholder="¿Cuál fue el mejor partido?" name="mejorPartido" class="pregunta6">
+                <input type="text" placeholder="¿Cuál fue el gol más lindo?" name="mejorGol" class="pregunta7">
+                <input type="text" placeholder="¿Cuál fue la mejor selección?" name="mejorSeleccion" class="pregunta8">
+                <input type="text" placeholder="¿Cuál fue la peor selección?" name="peorSeleccion" class="pregunta9">
+                <select name="mejorCampeon" class="pregunta10">
+                    <option value="#">Mejor campeon del mundo</option>
+                    <option value="uruguay30">Uruguay 1930</option>
+                    <option value="italia34"> Italia 1934</option>
+                    <option value="italia38">Italia 1938</option>
+                    <option value="uruguay50">Uruguay 1950</option>
+                    <option value="alemania54">Alemania 1954</option>
+                    <option value="brasil58">Brasil 1958</option>
+                    <option value="brasil62">Brasil 1962</option>
+                    <option value="inglaterra66">Inglaterra 1966</option>
+                    <option value="brasil70">Brasil 1970</option>
+                    <option value="alemania74">Alemania 1974</option>
+                    <option value="argentina78">Argentina 1978</option>
+                    <option value="italia82">Italia 1982</option>
+                    <option value="argentina86">Argentina 1986</option>
+                    <option value="alemania90">Alemania 1990</option>
+                    <option value="brasil94">Brasil 1994</option>
+                    <option value="francia98">Francia 1998</option>
+                    <option value="brasil02">Brasil 2002</option>
+                    <option value="italia06">Italia 2006</option>
+                    <option value="españa10">España 2010</option>
+                    <option value="alemania14">Alemania 2014</option>
+                    <option value="francia18">Francia 2018</option>
+                    <option value="argentina22">Argentina 2022</option>
+                </select>
+                <input type="button" value="Enviar Encuesta">
+                <!-- <input type="submit" value="Enviar Informacion"> -->
+            </section>
+
+            <section class="contacto">
+                <h3>¿Querés dejarnos algún mensaje?</h3>
+                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="text" placeholder="Apellido" name="apellido">
+                <input type="email" placeholder="Email" name="email">
+                <span>¿Te gustaría que armemos un sitio sobre otro mundial?</span>
+                <span>Si</span>
+                <input type="radio" value="acepto" name="radio">
+                <span>No</span>
+                <input type="radio" value="no-acepto" name="radio">
+                <textarea name="mensaje" placeholder="¿Sobre que otro mundial querés que hagamos un sitio?" cols="30" rows="5"></textarea>
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar Informacion">
+            </section>
+
         </form>
     </main>
     <footer class="pie">
