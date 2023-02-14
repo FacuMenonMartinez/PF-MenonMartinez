@@ -141,8 +141,8 @@
 @media (max-width: 800px) {
   /* -----------------INDEX MEDIANO---------------------- */
   .contenido__principal--index {
-    background-size: contain;
-    background-position-y: 15vh; }
+    background-size: cover;
+    background-position-x: center; }
     .contenido__principal--index h1 {
       top: 30vh; }
   .campeones div {
@@ -183,8 +183,7 @@
 @media (max-width: 500px) {
   /* --------------------INDEX------------------------ */
   .contenido__principal--index {
-    min-height: 50vh;
-    background-position-y: 17vh; }
+    min-height: 50vh; }
     .contenido__principal--index h1 {
       font-size: 5vh; }
   .contenido__principal--eliminatoria h1 {
@@ -776,7 +775,8 @@
   margin: 0;
   padding: 0;
   font-family: fuente-qatar;
-  color: #fff1f7; }
+  color: #fff1f7;
+  box-sizing: border-box; }
 
 /* HEADER */
 .img-header {

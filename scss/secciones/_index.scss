@@ -173,8 +173,8 @@
 
     /* -----------------INDEX MEDIANO---------------------- */
     .contenido__principal--index {
-        background-size: contain;
-        background-position-y: 15vh;
+        background-size: cover;
+        background-position-x: center;
         h1{
             top: 30vh;
         }
@@ -237,7 +237,6 @@
     /* --------------------INDEX------------------------ */
     .contenido__principal--index {
         min-height: 50vh;
-    background-position-y: 17vh;
     h1{
         font-size: 5vh;
 
