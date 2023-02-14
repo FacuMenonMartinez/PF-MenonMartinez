@@ -85,7 +85,7 @@
     background-color: black; }
   
     /*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     /* -----------------------------HEADER----------------------------- */
     .menu__seccion {
       font-size: 2.7vh;
@@ -99,7 +99,7 @@
       font-size: 4vh; }
     }
       /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
-  @media (max-width: 480px) {
+  @media (max-width: 520px) {
     /* ------------------HEADER------------------------ */
     .encabezadoGeneral {
       width: 100%; }
