@@ -34,7 +34,6 @@
     display: grid;
     margin: auto;
     width: 100%;
-    height: 60vh;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "campeonesLista campeonesCopa campeonesCopa ";
@@ -55,6 +54,8 @@
     grid-area: campeonesLista;
     align-self: center;
     justify-self: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     font-size: 4vh;
 }
 
@@ -73,9 +74,9 @@
 }
 
 .copa {
-    height: 45vh;
-    object-fit: contain;
-    justify-self: center;
+    max-height: 45vh;
+    // object-fit: contain;
+    // justify-self: center;
 }
 
 /* -----------------------------INDIVIDUALES----------------------------- */
@@ -89,11 +90,10 @@
 
 .individuales div {
     display: grid;
-    min-height: 50vh;
-    max-height: 70vh;
+    max-height: 65vh;
     width: 100%;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-auto-rows: 0.5fr 1fr 2fr;
+    grid-auto-rows: 0.5fr 1fr 1.5fr;
     grid-template-areas: "categoria categoria categoria"
         "jugador fotoJugador escudo"
         "informacion fotoJugador escudo";
@@ -129,16 +129,18 @@
 }
 
 .individuales-escudo {
-    height: 100%;
-    width: 100%;
+    justify-self: center;
+    max-height: 95%;
+    max-width: 95%;
     object-fit: contain;
     grid-area: escudo;
 }
 
 .individuales-jugador {
+    justify-self: center;
     height: 95%;
     width: 95%;
-    object-fit: contain;
+    object-fit: cover;
     grid-area: fotoJugador;
 }
 
@@ -168,10 +170,10 @@
         transform: translateX(0px);
     }
 }
-// MEDIAS QUERIES MEDIANOS
-@media (max-width: 800px) {
+// MEDIAS QUERIES MEDIANOS-GRANDES
+@media (max-width: 900px) {
 
-    /* -----------------INDEX MEDIANO---------------------- */
+    /* -----------------INDEX MEDIANO-GRANDE---------------------- */
     .contenido__principal--index {
         background-size: cover;
         background-position-x: center;
@@ -183,7 +185,6 @@
         display: grid;
         margin: auto;
         width: 100%;
-        min-height: 60vh;
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-rows: 1fr;
         grid-template-areas: "campeonesLista campeonesCopa campeonesCopa ";
@@ -192,6 +193,10 @@
 
     .campeones-lista {
         font-size: 3vh;
+
+    }
+    .copa {
+        max-height: 40vh;
     }
 
     .copaInfo {
@@ -200,26 +205,25 @@
 
     .individuales div {
         display: grid;
-        min-height: 70vh;
-        max-height: 75vh;
+        max-height: 77vh;
         width: 100%;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 0.5fr 2fr 1.5fr;
+        grid-template-rows: 10vh 45vh 10vh;
         grid-template-areas: "categoria categoria"
             "fotoJugador escudo"
             "jugador informacion";
     }
 
     .individuales-jugador {
-        max-height: 90%;
-        width: 90%;
-        object-fit: contain;
+        max-height: 85%;
+        max-width: 85%;
+        object-fit: cover;
         justify-self: center;
     }
 
     .individuales-escudo {
-        height: 80%;
-        width: 80%;
+        max-height: 90%;
+        max-width: 90%;
         justify-self: center;
     }
 
@@ -231,16 +235,15 @@
         align-self: baseline;
     }
 }
-// MEDIAS QUERIES PEQUEÑOS
-@media (max-width: 500px) {
+
+
+// MEDIAS QUERIES PEQUEÑOS-MEDIANOS
+@media (max-width: 660px) {
   
     /* --------------------INDEX------------------------ */
-    .contenido__principal--index {
-        min-height: 50vh;
-    h1{
-        font-size: 5vh;
+.contenido__principal--index{
+    background-position-y: 10vh;
 
-    }
 }
 
     .contenido__principal--eliminatoria h1 {
@@ -250,14 +253,15 @@
       display: none; }
     .campeones {
       width: 100%; }
+
     h3 {
+        font-size: 7vh;
       text-align: center; }
     .campeones div {
       display: grid;
       align-items: flex-start;
       flex-direction: column;
-      width: 100%;
-      height: auto;
+      width: 95%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 0.7fr 1fr 1fr;
       grid-template-areas: "campeonesLista ediciones"
@@ -266,13 +270,17 @@
     .ediciones {
       display: block;
       grid-area: ediciones;
-      font-size: 5vh;
+      font-size: 7vh;
       align-self: center;
       text-align: center; }
+
     .campeones-lista {
       grid-area: campeonesLista;
       justify-self: left;
-      margin-left: 4vw; }
+      margin-left: 4vw;
+      justify-self: center;
+      text-align: center;
+     }
     .campeones-copa {
       align-self: initial;
       grid-area: campeonesCopa;
