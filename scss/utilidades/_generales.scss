@@ -90,6 +90,7 @@
     h4{
       margin-top: 2vh;
       margin-left: 1vw;
+      font-size: 1.5rem;
     }
     section{
       display: flex;
@@ -104,7 +105,7 @@
 
         h5{
           text-decoration: overline;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
 
         a{
@@ -121,7 +122,7 @@
         align-self: flex-start;
         margin-left: 1vw;
       }
-      .menuFooter{
+      .menu_footer{
         align-self: center;
       }
       .masInfo{
@@ -144,28 +145,28 @@
       font-size: 5vh; }
     h3 {
       font-size: 4vh; }
-    }
 // ------------------------------FOOTER----------------------------------
-
-footer{
-  section{
-    div{
-      h5{
-      font-size: 1rem;
+      footer{
+        section{
+          div{
+            h5{
+            font-size: 1rem;
+          }
+          a{
+            font-size: 0.7rem;
+          }
+        
+          }
+      
+        }
+      
+      }
     }
-    a{
-      font-size: 0.7rem;
-    }
-  
-    }
-
-  }
 
 
 
-}
 
-      /* ---------------------------------------------- MEDIA QUERIES NAV CHICOS----------------------------------------- */
+      /* ----------------------------------- MEDIA QUERIES CHICOS MEDIANOS----------------------------------------- */
   @media (max-width: 660px) {
     /* ------------------HEADER------------------------ */
     .encabezadoGeneral {
@@ -214,7 +215,7 @@ footer{
             margin-left: 1vw;
             grid-area: sitios;
           }
-          .menuFooter{
+          .menu_footer{
             margin-right: 1vw;
             grid-area: secciones;
           }
@@ -227,3 +228,37 @@ footer{
       }
 
     }
+
+    // ----------------------------------------MEDIA QUERIES CHICOS---------------------------------------
+@media(max-width:425px){
+  footer{
+    section{
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      div{
+
+        h5{
+          font-size: 1rem;
+        }
+
+        a{
+          font-size: 0.8rem;
+        }
+      }
+      .sitios{
+        justify-self: left;
+
+      }
+      .menu_footer{
+        justify-self: right;
+        grid-area: secciones;
+      }
+      .masInfo{
+        justify-self: left;
+
+      }
+    }
+
+  }
+
+}

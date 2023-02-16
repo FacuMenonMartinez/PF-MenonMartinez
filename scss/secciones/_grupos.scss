@@ -1,407 +1,515 @@
 // TITULO
 .contenido__principal--grupos {
-    background-image: url(../recursos/grupo-catar1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 95vh;
-    max-height: 100vh;
-    // margin-top: 14vh;
-    background-position-y: 15vh;
+  background-image: url(../recursos/grupo-catar1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 95vh;
+  max-height: 100vh;
+  // margin-top: 14vh;
+  background-position-y: 15vh;
 
-    /* grid-area: titulo; */
-    h1 {
-      font-size: 15vh;
-      text-align: center;
-      padding-top: 45vh;
-      text-shadow: 10px 10px 10px black;
+  /* grid-area: titulo; */
+  h1 {
+    font-size: 15vh;
+    text-align: center;
+    padding-top: 45vh;
+    text-shadow: 10px 10px 10px black;
   }
-  }
-
-    // CONTENIDO
-     /* ---------------------------------------------FASE DE GRUPOS-------------------------------------- */
-  .faseGrupos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-template-areas: "titulo titulo"
-   "posiciones posiciones";
-    height: auto;
-    margin-bottom: 3vh; }
-  
-  /* ---------------TABLA DE POSICIONES-------------- */
-  .posiciones_titulo {
-    margin: 0;
-    grid-area: posicionesTitulo; }
-  
-  .resutlados_titulo {
-    margin: 0;
-    grid-area: resultadosTitulo; }
-  
-  .contenido__principal--grupos {
-    grid-area: titulo; }
-  
-  .posiciones {
-    grid-area: posiciones;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas: "posicionesTitulo resultadosTitulo"
-   "grupoA resultadosA"
-   "grupoB resultadosB"
-   "grupoC resultadosC"
-   "grupoD resultadosD"
-   "grupoE resultadosE"
-   "grupoF resultadosF"
-   "grupoG resultadosG"
-   "grupoH resultadosH"
-   "uruguay .";
-    padding-left: 6vw; }
-  
-  .grupoA {
-    grid-area: grupoA; }
-  
-  .grupoB {
-    grid-area: grupoB; }
-  
-  .grupoC {
-    grid-area: grupoC; }
-  
-  .grupoD {
-    grid-area: grupoD; }
-  
-  .grupoE {
-    grid-area: grupoE; }
-  
-  .grupoF {
-    grid-area: grupoF; }
-  
-  .grupoG {
-    grid-area: grupoG; }
-  
-  .grupoH {
-    grid-area: grupoH; }
-  
-  .resultadosA {
-    grid-area: resultadosA; }
-  
-  .resultadosB {
-    grid-area: resultadosB; }
-  
-  .resultadosC {
-    grid-area: resultadosC; }
-  
-  .resultadosD {
-    grid-area: resultadosD; }
-  
-  .resultadosE {
-    grid-area: resultadosE; }
-  
-  .resultadosF {
-    grid-area: resultadosF; }
-  
-  .resultadosG {
-    grid-area: resultadosG; }
-  
-  .resultadosH {
-    grid-area: resultadosH; }
-  
-  .posiciones div {
-    display: grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "grupo pts ganados empatados perdidos dif"
-   "pais1 pts1 g1 e1 p1 dif1"
-   "pais2 pts2 g2 e2 p2 dif2"
-   "pais3 pts3 g3 e3 p3 dif3"
-   "pais4 pts4 g4 e4 p4 dif4";
-    align-content: center;
-    width: 35vw;
-    height: 25vh;
-    box-shadow: 2px 2px 30px black;
-    font-size: 1.5vw;
-    margin-top: 3vh; }
-  
-  .posiciones section {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "equipo1 resultado1 resultado2 equipo2"
-   "equipo3 resultado3 resultado4 equipo4"
-   "equipo5 resultado5 resultado6 equipo6 "
-   "equipo7 resultado7 resultado8 equipo8"
-   "equipo9 resultado9 resultado10 equipo10"
-   "equipo11 resultado11 resultado12 equipo12";
-    justify-items: center;
-    width: 35vw;
-    height: 25vh;
-    box-shadow: 2px 2px 30px black;
-    font-size: 1.3vw;
-    margin-top: 3vh; }
-  
-  .grupo {
-    grid-area: grupo;
-    background-color: #81162b;
-    padding-left: 0.5vw; }
-  
-  .pts {
-    grid-area: pts;
-    background-color: #81162b; }
-  
-  .ganados {
-    grid-area: ganados;
-    background-color: #81162b; }
-  
-  .empatados {
-    grid-area: empatados;
-    background-color: #81162b; }
-  
-  .perdidos {
-    grid-area: perdidos;
-    background-color: #81162b; }
-  
-  .dif {
-    grid-area: dif;
-    background-color: #81162b; }
-  
-  .pais1 {
-    grid-area: pais1;
-    padding-left: 0.5vw; }
-  
-  .pais2 {
-    grid-area: pais2;
-    background-color: #81162b;
-    padding-left: 0.5vw; }
-  
-  .pais3 {
-    grid-area: pais3;
-    padding-left: 0.5vw; }
-  
-  .pais4 {
-    grid-area: pais4;
-    background-color: #81162b;
-    padding-left: 0.5vw; }
-  
-  .ganados1 {
-    grid-area: g1; }
-  
-  .ganados2 {
-    grid-area: g2;
-    background-color: #81162b; }
-  
-  .ganados3 {
-    grid-area: g3; }
-  
-  .ganados4 {
-    grid-area: g4;
-    background-color: #81162b; }
-  
-  .empatados1 {
-    grid-area: e1; }
-  
-  .empatados2 {
-    grid-area: e2;
-    background-color: #81162b; }
-  
-  .empatados3 {
-    grid-area: e3; }
-  
-  .empatados4 {
-    grid-area: e4;
-    background-color: #81162b; }
-  
-  .perdidos1 {
-    grid-area: p1; }
-  
-  .perdidos2 {
-    grid-area: p2;
-    background-color: #81162b; }
-  
-  .perdidos3 {
-    grid-area: p3; }
-  
-  .perdidos4 {
-    grid-area: p4;
-    background-color: #81162b; }
-  
-  .dif1 {
-    grid-area: dif1; }
-  
-  .dif2 {
-    grid-area: dif2;
-    background-color: #81162b; }
-  
-  .dif3 {
-    grid-area: dif3; }
-  
-  .dif4 {
-    grid-area: dif4;
-    background-color: #81162b; }
-  
-  .pts1 {
-    grid-area: pts1; }
-  
-  .pts2 {
-    grid-area: pts2;
-    background-color: #81162b; }
-  
-  .pts3 {
-    grid-area: pts3; }
-  
-  .pts4 {
-    grid-area: pts4;
-    background-color: #81162b; }
-  
-  .uruguay {
-    padding: 2vh 8vw 0 0vw;
-    font-size: 2.2vh;
-    font-style: italic;
-    grid-area: uruguay; }
-  
-  /* ---------------------------TABLAS DE  RESULTADOS-------------------------- */
-  .equipo1 {
-    grid-area: equipo1; }
-  
-  .equipo2 {
-    grid-area: equipo2; }
-  
-  .equipo3 {
-    grid-area: equipo3; }
-  
-  .equipo4 {
-    grid-area: equipo4; }
-  
-  .equipo5 {
-    grid-area: equipo5; }
-  
-  .equipo6 {
-    grid-area: equipo6; }
-  
-  .equipo7 {
-    grid-area: equipo7; }
-  
-  .equipo8 {
-    grid-area: equipo8; }
-  
-  .equipo9 {
-    grid-area: equipo9; }
-  
-  .equipo10 {
-    grid-area: equipo10; }
-  
-  .equipo11 {
-    grid-area: equipo11; }
-  
-  .equipo12 {
-    grid-area: equipo12; }
-  
-  .resultado1 {
-    grid-area: resultado1; }
-  
-  .resultado2 {
-    grid-area: resultado2; }
-  
-  .resultado3 {
-    grid-area: resultado3; }
-  
-  .resultado4 {
-    grid-area: resultado4; }
-  
-  .resultado5 {
-    grid-area: resultado5; }
-  
-  .resultado6 {
-    grid-area: resultado6; }
-  
-  .resultado7 {
-    grid-area: resultado7; }
-  
-  .resultado8 {
-    grid-area: resultado8; }
-  
-  .resultado9 {
-    grid-area: resultado9; }
-  
-  .resultado10 {
-    grid-area: resultado10; }
-  
-  .resultado11 {
-    grid-area: resultado11; }
-  
-  .resultado12 {
-    grid-area: resultado12; }
-   /*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
-   @media (max-width: 800px) {
-    /*---------------------- GRUPOS MEDIANO-------------------- */
-    .contenido__principal--grupos {
-      height: 60vh; }
-    .uruguay {
-      padding: 2vh 1vw 0 7vw; }
-    .posiciones {
-      padding-left: 0;
-      justify-items: center;
-      grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; }
 }
-        /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
-  @media (max-width: 480px) {
-  
-    /* ----------------------FASE DE GRUPOS------------------- */
-    .faseGrupos {
-      height: auto;
-      display: flex;
-      flex-direction: column; }
-    .contenido__principal--grupos {
-      height: 32vh;
-      display: flex;
-      justify-content: center; }
-    .contenido__principal--grupos h1 {
-      align-self: center;
-      justify-self: center;
-      padding-top: 20vh; }
-    .posiciones_titulo {
-      display: block;
-      font-size: 3vh; }
-    .resultados_titulo {
-      display: block;
-      font-size: 3vh; }
-    .posiciones {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-      grid-template-areas: "grupoA"
-   "resultadosA"
-   "grupoB"
-   "resultadosB"
-   "grupoC"
-   "resultadosC"
-   "grupoD"
-   "resultadosD"
-   "grupoE"
-   "resultadosE"
-   "grupoF"
-   "resultadosF"
-   "grupoG"
-   "resultadosG"
-   "grupoH"
-   "resultadosH"
-   "uruguay";
-      width: 100%;
-      padding: 0;
+
+// CONTENIDO
+/* ---------------------------------------------FASE DE GRUPOS-------------------------------------- */
+.faseGrupos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "titulo titulo"
+    "posiciones posiciones";
+  height: auto;
+  margin-bottom: 3vh;
+}
+
+/* ---------------TABLA DE POSICIONES-------------- */
+.posiciones_titulo {
+  margin: 0;
+  grid-area: posicionesTitulo;
+}
+
+.resutlados_titulo {
+  margin: 0;
+  grid-area: resultadosTitulo;
+}
+
+.contenido__principal--grupos {
+  grid-area: titulo;
+}
+
+.posiciones {
+  grid-area: posiciones;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas: "posicionesTitulo resultadosTitulo"
+    "grupoA resultadosA"
+    "grupoB resultadosB"
+    "grupoC resultadosC"
+    "grupoD resultadosD"
+    "grupoE resultadosE"
+    "grupoF resultadosF"
+    "grupoG resultadosG"
+    "grupoH resultadosH"
+    "uruguay .";
+  padding-left: 6vw;
+}
+
+.grupoA {
+  grid-area: grupoA;
+}
+
+.grupoB {
+  grid-area: grupoB;
+}
+
+.grupoC {
+  grid-area: grupoC;
+}
+
+.grupoD {
+  grid-area: grupoD;
+}
+
+.grupoE {
+  grid-area: grupoE;
+}
+
+.grupoF {
+  grid-area: grupoF;
+}
+
+.grupoG {
+  grid-area: grupoG;
+}
+
+.grupoH {
+  grid-area: grupoH;
+}
+
+.resultadosA {
+  grid-area: resultadosA;
+}
+
+.resultadosB {
+  grid-area: resultadosB;
+}
+
+.resultadosC {
+  grid-area: resultadosC;
+}
+
+.resultadosD {
+  grid-area: resultadosD;
+}
+
+.resultadosE {
+  grid-area: resultadosE;
+}
+
+.resultadosF {
+  grid-area: resultadosF;
+}
+
+.resultadosG {
+  grid-area: resultadosG;
+}
+
+.resultadosH {
+  grid-area: resultadosH;
+}
+
+.posiciones div {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "grupo pts ganados empatados perdidos dif"
+    "pais1 pts1 g1 e1 p1 dif1"
+    "pais2 pts2 g2 e2 p2 dif2"
+    "pais3 pts3 g3 e3 p3 dif3"
+    "pais4 pts4 g4 e4 p4 dif4";
+  align-content: center;
+  width: 35vw;
+  height: 25vh;
+  box-shadow: 2px 2px 30px black;
+  font-size: 1.5vw;
+  margin-top: 3vh;
+}
+
+.posiciones section {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "equipo1 resultado1 resultado2 equipo2"
+    "equipo3 resultado3 resultado4 equipo4"
+    "equipo5 resultado5 resultado6 equipo6 "
+    "equipo7 resultado7 resultado8 equipo8"
+    "equipo9 resultado9 resultado10 equipo10"
+    "equipo11 resultado11 resultado12 equipo12";
+  justify-items: center;
+  width: 35vw;
+  height: 25vh;
+  box-shadow: 2px 2px 30px black;
+  font-size: 1.3vw;
+  margin-top: 3vh;
+}
+
+.grupo {
+  grid-area: grupo;
+  background-color: #81162b;
+  padding-left: 0.5vw;
+}
+
+.pts {
+  grid-area: pts;
+  background-color: #81162b;
+}
+
+.ganados {
+  grid-area: ganados;
+  background-color: #81162b;
+}
+
+.empatados {
+  grid-area: empatados;
+  background-color: #81162b;
+}
+
+.perdidos {
+  grid-area: perdidos;
+  background-color: #81162b;
+}
+
+.dif {
+  grid-area: dif;
+  background-color: #81162b;
+}
+
+.pais1 {
+  grid-area: pais1;
+  padding-left: 0.5vw;
+}
+
+.pais2 {
+  grid-area: pais2;
+  background-color: #81162b;
+  padding-left: 0.5vw;
+}
+
+.pais3 {
+  grid-area: pais3;
+  padding-left: 0.5vw;
+}
+
+.pais4 {
+  grid-area: pais4;
+  background-color: #81162b;
+  padding-left: 0.5vw;
+}
+
+.ganados1 {
+  grid-area: g1;
+}
+
+.ganados2 {
+  grid-area: g2;
+  background-color: #81162b;
+}
+
+.ganados3 {
+  grid-area: g3;
+}
+
+.ganados4 {
+  grid-area: g4;
+  background-color: #81162b;
+}
+
+.empatados1 {
+  grid-area: e1;
+}
+
+.empatados2 {
+  grid-area: e2;
+  background-color: #81162b;
+}
+
+.empatados3 {
+  grid-area: e3;
+}
+
+.empatados4 {
+  grid-area: e4;
+  background-color: #81162b;
+}
+
+.perdidos1 {
+  grid-area: p1;
+}
+
+.perdidos2 {
+  grid-area: p2;
+  background-color: #81162b;
+}
+
+.perdidos3 {
+  grid-area: p3;
+}
+
+.perdidos4 {
+  grid-area: p4;
+  background-color: #81162b;
+}
+
+.dif1 {
+  grid-area: dif1;
+}
+
+.dif2 {
+  grid-area: dif2;
+  background-color: #81162b;
+}
+
+.dif3 {
+  grid-area: dif3;
+}
+
+.dif4 {
+  grid-area: dif4;
+  background-color: #81162b;
+}
+
+.pts1 {
+  grid-area: pts1;
+}
+
+.pts2 {
+  grid-area: pts2;
+  background-color: #81162b;
+}
+
+.pts3 {
+  grid-area: pts3;
+}
+
+.pts4 {
+  grid-area: pts4;
+  background-color: #81162b;
+}
+
+.uruguay {
+  padding: 2vh 8vw 0 0vw;
+  font-size: 2.2vh;
+  font-style: italic;
+  grid-area: uruguay;
+}
+
+/* ---------------------------TABLAS DE  RESULTADOS-------------------------- */
+.equipo1 {
+  grid-area: equipo1;
+}
+
+.equipo2 {
+  grid-area: equipo2;
+}
+
+.equipo3 {
+  grid-area: equipo3;
+}
+
+.equipo4 {
+  grid-area: equipo4;
+}
+
+.equipo5 {
+  grid-area: equipo5;
+}
+
+.equipo6 {
+  grid-area: equipo6;
+}
+
+.equipo7 {
+  grid-area: equipo7;
+}
+
+.equipo8 {
+  grid-area: equipo8;
+}
+
+.equipo9 {
+  grid-area: equipo9;
+}
+
+.equipo10 {
+  grid-area: equipo10;
+}
+
+.equipo11 {
+  grid-area: equipo11;
+}
+
+.equipo12 {
+  grid-area: equipo12;
+}
+
+.resultado1 {
+  grid-area: resultado1;
+}
+
+.resultado2 {
+  grid-area: resultado2;
+}
+
+.resultado3 {
+  grid-area: resultado3;
+}
+
+.resultado4 {
+  grid-area: resultado4;
+}
+
+.resultado5 {
+  grid-area: resultado5;
+}
+
+.resultado6 {
+  grid-area: resultado6;
+}
+
+.resultado7 {
+  grid-area: resultado7;
+}
+
+.resultado8 {
+  grid-area: resultado8;
+}
+
+.resultado9 {
+  grid-area: resultado9;
+}
+
+.resultado10 {
+  grid-area: resultado10;
+}
+
+.resultado11 {
+  grid-area: resultado11;
+}
+
+.resultado12 {
+  grid-area: resultado12;
+}
+
+/*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
+@media (max-width: 900px) {
+
+  /*---------------------- GRUPOS MEDIANO-------------------- */
+  .contenido__principal--grupos {
+    background-position-y: 4vh;
   }
-    .posiciones_titulo {
-      display: none; }
-    .resultados_titulo {
-      display: none; }
-    .posiciones section {
-      width: 100%;
-      font-size: 2.5vh;
-      height: 30vh;
-      border-bottom: 1.5px solid #fff1f7; }
-    .posiciones div {
-      width: 100%;
-      font-size: 3vh;
-      height: 30vh;
-      margin-top: 4vh; }
-    .uruguay {
-      margin-left: 2vw;
-      padding: 0; } }
-  
+
+  .uruguay {
+    padding: 2vh 1vw 0 7vw;
+  }
+
+  .posiciones {
+    padding-left: 0;
+    justify-items: center;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
+@media (max-width: 660px) {
+
+
+  /* ----------------------FASE DE GRUPOS------------------- */
+  .faseGrupos {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenido__principal--grupos {
+    height: 32vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenido__principal--grupos h1 {
+    align-self: center;
+    justify-self: center;
+    padding-top: 20vh;
+  }
+
+  .posiciones_titulo {
+    display: block;
+    font-size: 3vh;
+  }
+
+  .resultados_titulo {
+    display: block;
+    font-size: 3vh;
+  }
+
+  .posiciones {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    grid-template-areas: "grupoA"
+      "resultadosA"
+      "grupoB"
+      "resultadosB"
+      "grupoC"
+      "resultadosC"
+      "grupoD"
+      "resultadosD"
+      "grupoE"
+      "resultadosE"
+      "grupoF"
+      "resultadosF"
+      "grupoG"
+      "resultadosG"
+      "grupoH"
+      "resultadosH"
+      "uruguay";
+    width: 95%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .posiciones_titulo {
+    display: none;
+  }
+
+  .resultados_titulo {
+    display: none;
+  }
+
+  .posiciones section {
+    width: 100%;
+    font-size: 2.5vh;
+    height: 30vh;
+    border-bottom: 1.5px solid #fff1f7;
+  }
+
+  .posiciones div {
+    width: 100%;
+    font-size: 3vh;
+    height: 30vh;
+    margin-top: 4vh;
+  }
+
+  .uruguay {
+    padding: 0;
+  }
+}

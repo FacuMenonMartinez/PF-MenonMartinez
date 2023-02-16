@@ -250,7 +250,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  max-height: 100vh;
+  min-height: 80vh;
   background-position-y: 15vh; }
   .contenido__principal--seleccionados h1 {
     font-size: 15vh;
@@ -267,10 +267,9 @@
 .infoEquipo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-areas: "pais escudo" "jugadores escudo" "jugadores camiseta" "dt camiseta";
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-template-areas: "pais escudo" "jugadores escudo" "dt camiseta";
   width: 95%;
-  height: 80vh;
   box-shadow: 2px 2px 10px black;
   margin: auto;
   margin-top: 4vh;
@@ -284,6 +283,7 @@
 
 .listaJugadores {
   grid-area: jugadores;
+  font-size: 1.5rem;
   columns: 2;
   padding-left: 1vw; }
 
@@ -292,7 +292,7 @@
   overflow: visible;
   justify-self: center;
   align-self: center;
-  height: 80%; }
+  max-height: 80%; }
 
 .sCamiseta {
   grid-area: camiseta;
@@ -300,14 +300,52 @@
   align-self: center;
   overflow: hidden;
   height: 95%;
-  width: 70%;
+  max-width: 95%;
   border: 2px solid #fff1f7; }
 
 .dt {
   grid-area: dt;
+  font-size: 1.5rem;
   padding-top: 2vh;
   padding-left: 1vw;
   align-self: initial; }
+
+@media (max-width: 900px) {
+  .infoEquipo {
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-areas: "pais escudo" "jugadores escudo" "jugadores camiseta" "dt .";
+    width: 95%; }
+  .sEscudo {
+    max-height: 75%;
+    max-width: 80%; }
+  .listaJugadores {
+    font-size: 20px; } }
+
+@media (max-width: 768px) {
+  .listaJugadores {
+    font-size: 1rem; } }
+
+@media (max-width: 690px) {
+  .listaJugadores {
+    font-size: 14px; } }
+
+@media (max-width: 600px) {
+  .contenido__principal--seleccionados h1 {
+    font-size: 10vh; }
+  .infoEquipo {
+    display: flex;
+    flex-direction: column;
+    width: 95%; }
+  .sEscudo {
+    max-width: 50vw;
+    padding-bottom: 2vh; }
+  .sCamiseta {
+    max-height: 70vh;
+    margin-bottom: 2vh; } }
+
+@media (max-width: 375px) {
+  .contenido__principal--seleccionados h1 {
+    font-size: 8vh; } }
 
 .contenido__principal--grupos {
   background-image: url(../recursos/grupo-catar1.jpg);
@@ -618,10 +656,10 @@
   grid-area: resultado12; }
 
 /*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   /*---------------------- GRUPOS MEDIANO-------------------- */
   .contenido__principal--grupos {
-    height: 60vh; }
+    background-position-y: 4vh; }
   .uruguay {
     padding: 2vh 1vw 0 7vw; }
   .posiciones {
@@ -630,9 +668,10 @@
     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; } }
 
 /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
-@media (max-width: 480px) {
+@media (max-width: 660px) {
   /* ----------------------FASE DE GRUPOS------------------- */
   .faseGrupos {
+    margin: 0;
     height: auto;
     display: flex;
     flex-direction: column; }
@@ -652,9 +691,10 @@
     font-size: 3vh; }
   .posiciones {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
     grid-template-areas: "grupoA" "resultadosA" "grupoB" "resultadosB" "grupoC" "resultadosC" "grupoD" "resultadosD" "grupoE" "resultadosE" "grupoF" "resultadosF" "grupoG" "resultadosG" "grupoH" "resultadosH" "uruguay";
-    width: 100%;
+    width: 95%;
+    margin: auto;
     padding: 0; }
   .posiciones_titulo {
     display: none; }
@@ -671,7 +711,6 @@
     height: 30vh;
     margin-top: 4vh; }
   .uruguay {
-    margin-left: 2vw;
     padding: 0; } }
 
 .contenido__principal--eliminatoria {
@@ -922,7 +961,8 @@ footer {
   background-color: black; }
   footer h4 {
     margin-top: 2vh;
-    margin-left: 1vw; }
+    margin-left: 1vw;
+    font-size: 1.5rem; }
   footer section {
     display: flex;
     margin: auto;
@@ -934,7 +974,7 @@ footer {
       margin-bottom: 1vh; }
       footer section div h5 {
         text-decoration: overline;
-        font-size: 1.2rem; }
+        font-size: 1.3rem; }
       footer section div a {
         color: #fff1f7 !important;
         text-decoration: none;
@@ -944,7 +984,7 @@ footer {
     footer section .sitios {
       align-self: flex-start;
       margin-left: 1vw; }
-    footer section .menuFooter {
+    footer section .menu_footer {
       align-self: center; }
     footer section .masInfo {
       align-self: flex-start;
@@ -962,15 +1002,13 @@ footer {
   h2 {
     font-size: 5vh; }
   h3 {
-    font-size: 4vh; } }
+    font-size: 4vh; }
+  footer section div h5 {
+    font-size: 1rem; }
+  footer section div a {
+    font-size: 0.7rem; } }
 
-footer section div h5 {
-  font-size: 1rem; }
-
-footer section div a {
-  font-size: 0.7rem; }
-
-/* ---------------------------------------------- MEDIA QUERIES NAV CHICOS----------------------------------------- */
+/* ----------------------------------- MEDIA QUERIES CHICOS MEDIANOS----------------------------------------- */
 @media (max-width: 660px) {
   /* ------------------HEADER------------------------ */
   .encabezadoGeneral {
@@ -1006,9 +1044,25 @@ footer section div a {
     footer section .sitios {
       margin-left: 1vw;
       grid-area: sitios; }
-    footer section .menuFooter {
+    footer section .menu_footer {
       margin-right: 1vw;
       grid-area: secciones; }
     footer section .masInfo {
       margin-left: 1vw;
       grid-area: info; } }
+
+@media (max-width: 425px) {
+  footer section {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    footer section div h5 {
+      font-size: 1rem; }
+    footer section div a {
+      font-size: 0.8rem; }
+    footer section .sitios {
+      justify-self: left; }
+    footer section .menu_footer {
+      justify-self: right;
+      grid-area: secciones; }
+    footer section .masInfo {
+      justify-self: left; } }
