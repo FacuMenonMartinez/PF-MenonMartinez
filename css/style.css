@@ -919,10 +919,39 @@ h3 {
 
 /*--------------------- --------------------------FOOTER------------------------------------------ */
 footer {
-  height: 100px;
+  width: 100%;
   background-color: black; }
+  footer h4 {
+    margin-top: 2vh;
+    margin-left: 1vw; }
+  footer section {
+    display: flex;
+    margin: auto;
+    justify-content: space-between; }
+    footer section div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 1vh; }
+      footer section div h5 {
+        text-decoration: overline;
+        font-size: 1.2rem; }
+      footer section div a {
+        color: #fff1f7 !important;
+        text-decoration: none;
+        font-size: 1rem; }
+      footer section div a:hover {
+        text-decoration: underline; }
+    footer section .sitios {
+      align-self: flex-start;
+      margin-left: 1vw; }
+    footer section .menuFooter {
+      align-self: center; }
+    footer section .masInfo {
+      align-self: flex-start;
+      margin-right: 1vw; }
 
-/*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
+/*------------------------ -----------------MEDIA QUERIES NAV------------------------------------------ */
 @media (max-width: 1000px) {
   /* -----------------------------HEADER----------------------------- */
   .menu__seccion {
@@ -936,7 +965,7 @@ footer {
   h3 {
     font-size: 4vh; } }
 
-/* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
+/* ---------------------------------------------- MEDIA QUERIES NAV CHICOS----------------------------------------- */
 @media (max-width: 520px) {
   /* ------------------HEADER------------------------ */
   .encabezadoGeneral {

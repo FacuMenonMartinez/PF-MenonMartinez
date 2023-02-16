@@ -82,10 +82,56 @@
 
       /*--------------------- --------------------------FOOTER------------------------------------------ */
   footer {
-    height: 100px;
-    background-color: black; }
+    // height: 100px;
+    width: 100%;
+    background-color: black;
+
+
+    h4{
+      margin-top: 2vh;
+      margin-left: 1vw;
+    }
+    section{
+      display: flex;
+      margin:auto ;
+      justify-content: space-between;
+
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        margin-bottom: 1vh;
+
+        h5{
+          text-decoration: overline;
+          font-size: 1.2rem;
+        }
+
+        a{
+          // PARA ELIMINAR EL ESTILO DE BOOTSTRAP EN ELIMINATORIAS
+          color: $color-letra !important;
+          text-decoration: none;
+          font-size: 1rem;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+      }
+      .sitios{
+        align-self: flex-start;
+        margin-left: 1vw;
+      }
+      .menuFooter{
+        align-self: center;
+      }
+      .masInfo{
+        align-self: flex-start;
+        margin-right: 1vw;
+      }
+    }
+   }
   
-    /*------------------------ -----------------MEDIA QUERIES INDEX MEDIANOS------------------------------------------ */
+    /*------------------------ -----------------MEDIA QUERIES NAV------------------------------------------ */
   @media (max-width: 1000px) {
     /* -----------------------------HEADER----------------------------- */
     .menu__seccion {
@@ -99,7 +145,7 @@
     h3 {
       font-size: 4vh; }
     }
-      /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
+      /* ---------------------------------------------- MEDIA QUERIES NAV CHICOS----------------------------------------- */
   @media (max-width: 520px) {
     /* ------------------HEADER------------------------ */
     .encabezadoGeneral {
