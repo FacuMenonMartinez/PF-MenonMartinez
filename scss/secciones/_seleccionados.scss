@@ -140,8 +140,9 @@
 
     }
     //------------------------------------ DISPOSITIVOS PEQUEÑOS
-@media(max-width: 375px){
+@media(max-width: 390px){
     .contenido__principal--seleccionados h1 {
-        font-size: 8vh;
+        font-size: 7vh;
+        margin: auto;
     }
 }
