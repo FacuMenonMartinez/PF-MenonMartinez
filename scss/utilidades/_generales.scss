@@ -132,7 +132,7 @@
    }
   
     /*------------------------ -----------------MEDIA QUERIES NAV------------------------------------------ */
-  @media (max-width: 1000px) {
+  @media (max-width: 900px) {
     /* -----------------------------HEADER----------------------------- */
     .menu__seccion {
       font-size: 2.7vh;
@@ -145,8 +145,28 @@
     h3 {
       font-size: 4vh; }
     }
+// ------------------------------FOOTER----------------------------------
+
+footer{
+  section{
+    div{
+      h5{
+      font-size: 1rem;
+    }
+    a{
+      font-size: 0.7rem;
+    }
+  
+    }
+
+  }
+
+
+
+}
+
       /* ---------------------------------------------- MEDIA QUERIES NAV CHICOS----------------------------------------- */
-  @media (max-width: 520px) {
+  @media (max-width: 660px) {
     /* ------------------HEADER------------------------ */
     .encabezadoGeneral {
       width: 100%; }
@@ -154,7 +174,7 @@
       justify-content: center;
       flex-direction: column; }
     .img-header {
-      width: 60px;
+      min-width: 9vh;
       margin-left: 0px;
       margin-top: 0px; }
     .menu {
@@ -168,4 +188,42 @@
       font-size: 3vw;
       margin: 3px;
       padding: 0px 10px 0px 10px; }
+    
+      // -----------------FOOTER------------------------------
+      footer{
+        section{
+          display: grid;
+          width: 100%;
+          grid-template-columns: 1.5fr 0.5fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: 
+          "sitios secciones"
+          "info secciones";
+    
+          div{
+    
+            h5{
+              font-size: 1.2rem;
+            }
+    
+            a{
+              font-size: 1rem;
+            }
+          }
+          .sitios{
+            margin-left: 1vw;
+            grid-area: sitios;
+          }
+          .menuFooter{
+            margin-right: 1vw;
+            grid-area: secciones;
+          }
+          .masInfo{
+            margin-left: 1vw;
+            grid-area: info;
+          }
+        }
+
+      }
+
     }

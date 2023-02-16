@@ -242,7 +242,7 @@
   
     /* --------------------INDEX------------------------ */
 .contenido__principal--index{
-    background-position-y: 10vh;
+    background-position-y: 16vh;
 
 }
 
@@ -295,8 +295,7 @@
       width: 100%; }
     .individuales div {
       display: grid;
-      min-height: 70vh;
-    max-height: 85vh;
+    max-height: 95vh;
       width: 100%;
       grid-template-columns: 1fr;
       grid-template-rows: 0.3fr 2fr 0.5fr 0.3fr;

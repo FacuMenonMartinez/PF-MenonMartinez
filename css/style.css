@@ -183,7 +183,7 @@
 @media (max-width: 660px) {
   /* --------------------INDEX------------------------ */
   .contenido__principal--index {
-    background-position-y: 10vh; }
+    background-position-y: 16vh; }
   .contenido__principal--eliminatoria h1 {
     font-size: 40px;
     margin: 10px; }
@@ -228,8 +228,7 @@
     width: 100%; }
   .individuales div {
     display: grid;
-    min-height: 70vh;
-    max-height: 85vh;
+    max-height: 95vh;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr 0.5fr 0.3fr;
@@ -952,7 +951,7 @@ footer {
       margin-right: 1vw; }
 
 /*------------------------ -----------------MEDIA QUERIES NAV------------------------------------------ */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   /* -----------------------------HEADER----------------------------- */
   .menu__seccion {
     font-size: 2.7vh;
@@ -965,8 +964,14 @@ footer {
   h3 {
     font-size: 4vh; } }
 
+footer section div h5 {
+  font-size: 1rem; }
+
+footer section div a {
+  font-size: 0.7rem; }
+
 /* ---------------------------------------------- MEDIA QUERIES NAV CHICOS----------------------------------------- */
-@media (max-width: 520px) {
+@media (max-width: 660px) {
   /* ------------------HEADER------------------------ */
   .encabezadoGeneral {
     width: 100%; }
@@ -974,7 +979,7 @@ footer {
     justify-content: center;
     flex-direction: column; }
   .img-header {
-    width: 60px;
+    min-width: 9vh;
     margin-left: 0px;
     margin-top: 0px; }
   .menu {
@@ -987,4 +992,23 @@ footer {
   .menu__seccion--resaltado {
     font-size: 3vw;
     margin: 3px;
-    padding: 0px 10px 0px 10px; } }
+    padding: 0px 10px 0px 10px; }
+  footer section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sitios secciones" "info secciones"; }
+    footer section div h5 {
+      font-size: 1.2rem; }
+    footer section div a {
+      font-size: 1rem; }
+    footer section .sitios {
+      margin-left: 1vw;
+      grid-area: sitios; }
+    footer section .menuFooter {
+      margin-right: 1vw;
+      grid-area: secciones; }
+    footer section .masInfo {
+      margin-left: 1vw;
+      grid-area: info; } }
