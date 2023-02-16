@@ -2,21 +2,219 @@
     Fuente: gris rgb(255, 241, 247)
     Fondo: bordo rgb(158, 25, 52)
     Footer: Negro */
+@font-face {
+  font-family: fuente-qatar;
+  src: url(../recursos/fuente-qatar.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fuente-qatar;
+  color: #fff1f7;
+  box-sizing: border-box; }
+
+/* HEADER */
+.img-header {
+  vertical-align: initial;
+  width: 7vw;
+  margin-left: 2vw;
+  margin-top: 2vh; }
+
+.encabezadoGeneral {
+  background-color: #9e1934;
+  border-bottom: 1px solid black;
+  width: 100%;
+  position: fixed;
+  z-index: +5; }
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; }
+
+.menu__seccion {
+  color: #fff1f7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin: 4vw; }
+
+.menu__seccion--resaltado {
+  color: #9e1934;
+  background-color: #fff1f7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin: 4vw;
+  padding: 0px 10px 0px 10px; }
+
+li {
+  list-style-type: none; }
+
+.menu li:hover {
+  text-shadow: 2px 2px 15px #fff1f7; }
+
+/*------------------------------ MAIN---------------------------- */
+.contenido {
+  display: flex;
+  flex-direction: column; }
+
+/* BODY */
+body {
+  background-color: #9e1934;
+  display: flex;
+  flex-direction: column; }
+
+/* TITULOS GENERALES */
+h2 {
+  font-size: 6vh;
+  margin-left: 3vw; }
+
+h3 {
+  font-size: 5vh;
+  margin-top: 3vh; }
+
+/*--------------------- --------------------------FOOTER------------------------------------------ */
+footer {
+  width: 100%;
+  background-color: black; }
+  footer h4 {
+    margin-top: 2vh;
+    margin-left: 1vw;
+    font-size: 1.5rem; }
+  footer section {
+    display: flex;
+    margin: auto;
+    justify-content: space-between; }
+    footer section div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 1vh; }
+      footer section div h5 {
+        text-decoration: overline;
+        font-size: 1.3rem; }
+      footer section div a {
+        color: #fff1f7 !important;
+        text-decoration: none;
+        font-size: 1rem; }
+      footer section div a:hover {
+        text-decoration: underline; }
+    footer section .sitios {
+      align-self: flex-start;
+      margin-left: 1vw; }
+    footer section .menu_footer {
+      align-self: center; }
+    footer section .masInfo {
+      align-self: flex-start;
+      margin-right: 1vw; }
+
+/*------------------------ -----------------MEDIA QUERIES NAV------------------------------------------ */
+@media (max-width: 900px) {
+  /* -----------------------------HEADER----------------------------- */
+  .menu__seccion {
+    font-size: 2.7vh;
+    margin: 2vw; }
+  .menu__seccion--resaltado {
+    font-size: 2.7vh;
+    margin: 2vw; }
+  h2 {
+    font-size: 5vh; }
+  h3 {
+    font-size: 4vh; }
+  footer section div h5 {
+    font-size: 1rem; }
+  footer section div a {
+    font-size: 0.7rem; } }
+
+/* ----------------------------------- MEDIA QUERIES CHICOS MEDIANOS----------------------------------------- */
+@media (max-width: 660px) {
+  /* ------------------HEADER------------------------ */
+  .encabezadoGeneral {
+    width: 100%; }
+  nav {
+    justify-content: center;
+    flex-direction: column; }
+  .img-header {
+    min-width: 9vh;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .menu {
+    display: flex;
+    flex-direction: row; }
+  .menu__seccion {
+    font-size: 3vw;
+    padding: 0px 3px 0px 3px;
+    margin: 3px; }
+  .menu__seccion--resaltado {
+    font-size: 3vw;
+    margin: 3px;
+    padding: 0px 10px 0px 10px; }
+  footer section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sitios secciones" "info secciones"; }
+    footer section div h5 {
+      font-size: 1.2rem; }
+    footer section div a {
+      font-size: 1rem; }
+    footer section .sitios {
+      margin-left: 1vw;
+      grid-area: sitios; }
+    footer section .menu_footer {
+      margin-right: 1vw;
+      grid-area: secciones; }
+    footer section .masInfo {
+      margin-left: 1vw;
+      grid-area: info; } }
+
+@media (max-width: 425px) {
+  footer section {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    footer section div h5 {
+      font-size: 1rem; }
+    footer section div a {
+      font-size: 0.8rem; }
+    footer section .sitios {
+      justify-self: left; }
+    footer section .menu_footer {
+      justify-self: right;
+      grid-area: secciones; }
+    footer section .masInfo {
+      justify-self: left; } }
+
+@media (max-width: 350px) {
+  footer section {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    footer section div h5 {
+      font-size: 0.8rem; }
+    footer section div a {
+      font-size: 0.6rem; } }
+
 /* TITULO*/
 .contenido__principal--index {
   background-image: url(../recursos/argentina-campeon.jpg);
+  background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
-  background-position-y: 15vh; }
-
-.contenido__principal--titulo {
-  font-size: 15vh;
-  position: relative;
-  top: 50vh;
-  text-align: center;
-  text-shadow: 10px 10px 10px black; }
+  background-position-y: 20vh; }
+  .contenido__principal--index h1 {
+    font-size: 15vh;
+    text-align: center;
+    padding-top: 40vh;
+    text-shadow: 10px 10px 10px black; }
 
 .campeones {
   margin: auto;
@@ -141,10 +339,9 @@
 @media (max-width: 900px) {
   /* -----------------INDEX MEDIANO-GRANDE---------------------- */
   .contenido__principal--index {
-    background-size: cover;
-    background-position-x: center; }
+    background-position-y: 13vh; }
     .contenido__principal--index h1 {
-      top: 30vh; }
+      padding-top: 30vh; }
   .campeones div {
     display: grid;
     margin: auto;
@@ -183,17 +380,17 @@
 @media (max-width: 660px) {
   /* --------------------INDEX------------------------ */
   .contenido__principal--index {
+    min-height: 80vh;
     background-position-y: 16vh; }
-  .contenido__principal--eliminatoria h1 {
-    font-size: 40px;
-    margin: 10px; }
+    .contenido__principal--index h1 {
+      font-size: 10vh; }
   h2 {
     display: none; }
+  h3 {
+    font-size: 6vh;
+    text-align: center; }
   .campeones {
     width: 100%; }
-  h3 {
-    font-size: 7vh;
-    text-align: center; }
   .campeones div {
     display: grid;
     align-items: flex-start;
@@ -205,13 +402,13 @@
   .ediciones {
     display: block;
     grid-area: ediciones;
+    padding-right: 7vw;
+    padding-left: 7vw;
     font-size: 7vh;
     align-self: center;
     text-align: center; }
   .campeones-lista {
     grid-area: campeonesLista;
-    justify-self: left;
-    margin-left: 4vw;
     justify-self: center;
     text-align: center; }
   .campeones-copa {
@@ -227,22 +424,42 @@
   .individuales {
     width: 100%; }
   .individuales div {
-    display: grid;
-    max-height: 95vh;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2fr 0.5fr 0.3fr;
-    grid-template-areas: "categoria" "fotoJugador" "jugador" "informacion"; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: none;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 3vh; }
   .individuales-escudo {
     display: none; }
   .individuales-nombre {
+    margin-top: 1vh;
     align-self: center; }
   .individuales-jugador {
     width: 95%;
     grid-area: fotoJugador; }
+  .individuales-info {
+    margin-top: 1vh;
+    align-self: center; }
   .individuales-categoria {
     font-size: 4vh;
     text-align: center; } }
+
+@media (max-width: 475px) {
+  .contenido__principal--index h1 {
+    padding-top: 20vh; }
+  h3 {
+    font-size: 4vh; }
+  .individuales-categoria {
+    font-size: 3.2vh; } }
+
+@media (max-width: 325px) {
+  .campeones-lista {
+    font-size: 3vh; }
+  .ediciones {
+    font-size: 5vh; } }
 
 .contenido__principal--seleccionados {
   background-image: url(../recursos/logo-seleccionados.png);
@@ -660,13 +877,26 @@
 @media (max-width: 900px) {
   /*---------------------- GRUPOS MEDIANO-------------------- */
   .contenido__principal--grupos {
-    background-position-y: 4vh; }
+    background-position-y: 4vh;
+    min-height: 80vh;
+    max-height: none; }
+    .contenido__principal--grupos h1 {
+      padding-top: 28vh;
+      font-size: 12vh; }
   .uruguay {
     padding: 2vh 1vw 0 7vw; }
   .posiciones {
+    margin-top: 3vh;
     padding-left: 0;
     justify-items: center;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; } }
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; }
+    .posiciones h2 {
+      margin: 0; }
+  .posiciones div {
+    font-size: 2vh; }
+  .posiciones section {
+    grid-template-columns: 1fr 0.1fr 0.1fr 1fr;
+    font-size: 2vh; } }
 
 /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
 @media (max-width: 660px) {
@@ -713,6 +943,22 @@
     margin-top: 4vh; }
   .uruguay {
     padding: 0; } }
+
+@media (max-width: 500px) {
+  .contenido__principal--grupos {
+    background-position-y: 6vh;
+    min-height: 70vh; }
+    .contenido__principal--grupos h1 {
+      padding-top: 6vh;
+      font-size: 10vh; } }
+
+@media (max-width: 410px) {
+  .contenido__principal--grupos {
+    background-position-y: 8vh;
+    min-height: 60vh; }
+    .contenido__principal--grupos h1 {
+      padding-top: 4vh;
+      font-size: 7.5vh; } }
 
 .contenido__principal--eliminatoria {
   background-image: url(../recursos/pelota-final.png);
@@ -789,6 +1035,10 @@
   grid-area: resumen;
   color: #fff1f7;
   font-size: 1.5rem; }
+
+.contenido__principal--eliminatoria h1 {
+  font-size: 40px;
+  margin: 10px; }
 
 /* FONDOS DE TITULO*/
 .contenido__principal--contacto {
@@ -877,193 +1127,3 @@ form h3 {
   margin: 2vw; }
   .fotoCopa img {
     max-width: 100%; }
-
-@font-face {
-  font-family: fuente-qatar;
-  src: url(../recursos/fuente-qatar.ttf); }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: fuente-qatar;
-  color: #fff1f7;
-  box-sizing: border-box; }
-
-/* HEADER */
-.img-header {
-  vertical-align: initial;
-  width: 7vw;
-  margin-left: 2vw;
-  margin-top: 2vh; }
-
-.encabezadoGeneral {
-  background-color: #9e1934;
-  border-bottom: 1px solid black;
-  width: 100%;
-  position: fixed;
-  z-index: +5; }
-
-nav {
-  display: flex;
-  align-items: center;
-  width: 100%; }
-
-.menu {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row; }
-
-.menu__seccion {
-  color: #fff1f7;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.5vw;
-  margin: 4vw; }
-
-.menu__seccion--resaltado {
-  color: #9e1934;
-  background-color: #fff1f7;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.5vw;
-  margin: 4vw;
-  padding: 0px 10px 0px 10px; }
-
-li {
-  list-style-type: none; }
-
-.menu li:hover {
-  text-shadow: 2px 2px 15px #fff1f7; }
-
-/*------------------------------ MAIN---------------------------- */
-.contenido {
-  display: flex;
-  flex-direction: column; }
-
-/* BODY */
-body {
-  background-color: #9e1934;
-  display: flex;
-  flex-direction: column; }
-
-/* TITULOS GENERALES */
-h2 {
-  font-size: 6vh;
-  margin-left: 3vw; }
-
-h3 {
-  font-size: 5vh;
-  margin-top: 3vh; }
-
-/*--------------------- --------------------------FOOTER------------------------------------------ */
-footer {
-  width: 100%;
-  background-color: black; }
-  footer h4 {
-    margin-top: 2vh;
-    margin-left: 1vw;
-    font-size: 1.5rem; }
-  footer section {
-    display: flex;
-    margin: auto;
-    justify-content: space-between; }
-    footer section div {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin-bottom: 1vh; }
-      footer section div h5 {
-        text-decoration: overline;
-        font-size: 1.3rem; }
-      footer section div a {
-        color: #fff1f7 !important;
-        text-decoration: none;
-        font-size: 1rem; }
-      footer section div a:hover {
-        text-decoration: underline; }
-    footer section .sitios {
-      align-self: flex-start;
-      margin-left: 1vw; }
-    footer section .menu_footer {
-      align-self: center; }
-    footer section .masInfo {
-      align-self: flex-start;
-      margin-right: 1vw; }
-
-/*------------------------ -----------------MEDIA QUERIES NAV------------------------------------------ */
-@media (max-width: 900px) {
-  /* -----------------------------HEADER----------------------------- */
-  .menu__seccion {
-    font-size: 2.7vh;
-    margin: 2vw; }
-  .menu__seccion--resaltado {
-    font-size: 2.7vh;
-    margin: 2vw; }
-  h2 {
-    font-size: 5vh; }
-  h3 {
-    font-size: 4vh; }
-  footer section div h5 {
-    font-size: 1rem; }
-  footer section div a {
-    font-size: 0.7rem; } }
-
-/* ----------------------------------- MEDIA QUERIES CHICOS MEDIANOS----------------------------------------- */
-@media (max-width: 660px) {
-  /* ------------------HEADER------------------------ */
-  .encabezadoGeneral {
-    width: 100%; }
-  nav {
-    justify-content: center;
-    flex-direction: column; }
-  .img-header {
-    min-width: 9vh;
-    margin-left: 0px;
-    margin-top: 0px; }
-  .menu {
-    display: flex;
-    flex-direction: row; }
-  .menu__seccion {
-    font-size: 3vw;
-    padding: 0px 3px 0px 3px;
-    margin: 3px; }
-  .menu__seccion--resaltado {
-    font-size: 3vw;
-    margin: 3px;
-    padding: 0px 10px 0px 10px; }
-  footer section {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "sitios secciones" "info secciones"; }
-    footer section div h5 {
-      font-size: 1.2rem; }
-    footer section div a {
-      font-size: 1rem; }
-    footer section .sitios {
-      margin-left: 1vw;
-      grid-area: sitios; }
-    footer section .menu_footer {
-      margin-right: 1vw;
-      grid-area: secciones; }
-    footer section .masInfo {
-      margin-left: 1vw;
-      grid-area: info; } }
-
-@media (max-width: 425px) {
-  footer section {
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; }
-    footer section div h5 {
-      font-size: 1rem; }
-    footer section div a {
-      font-size: 0.8rem; }
-    footer section .sitios {
-      justify-self: left; }
-    footer section .menu_footer {
-      justify-self: right;
-      grid-area: secciones; }
-    footer section .masInfo {
-      justify-self: left; } }

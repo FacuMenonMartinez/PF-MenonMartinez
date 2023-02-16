@@ -415,6 +415,12 @@
   /*---------------------- GRUPOS MEDIANO-------------------- */
   .contenido__principal--grupos {
     background-position-y: 4vh;
+    min-height: 80vh;
+    max-height: none;
+    h1{
+      padding-top: 28vh;
+      font-size:12vh ;
+    }
   }
 
   .uruguay {
@@ -422,10 +428,26 @@
   }
 
   .posiciones {
+    margin-top: 3vh;
     padding-left: 0;
     justify-items: center;
     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+    h2{
+      margin: 0;
+    }
   }
+  // TABLA DE POSICIONES
+  .posiciones div {
+
+    font-size: 2vh;
+}
+
+// TABLA DE RESULTADOS
+.posiciones section{
+  grid-template-columns: 1fr 0.1fr 0.1fr 1fr;
+  font-size: 2vh;
+}
+
 }
 
 /* ---------------------------------------------- MEDIA QUERIES INDEX CHICOS----------------------------------------- */
@@ -512,4 +534,29 @@
   .uruguay {
     padding: 0;
   }
+}
+// DISPOSITIVOS MAS PEQUEÑOS
+@media(max-width:500px){
+  .contenido__principal--grupos {
+    background-position-y: 6vh;
+    min-height: 70vh;
+    h1{
+      padding-top: 6vh;
+      font-size:10vh ;
+    }
+  }
+
+}
+
+@media(max-width:410px){
+  .contenido__principal--grupos {
+    background-position-y: 8vh;
+    min-height: 60vh;
+
+    h1{
+      padding-top: 4vh;
+      font-size: 7.5vh ;
+    }
+  }
+
 }

@@ -262,3 +262,25 @@
   }
 
 }
+
+@media(max-width:350px){
+  footer{
+    section{
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      div{
+
+        h5{
+          font-size: 0.8rem;
+        }
+
+        a{
+          font-size: 0.6rem;
+        }
+      }
+
+    }
+
+  }
+
+}
