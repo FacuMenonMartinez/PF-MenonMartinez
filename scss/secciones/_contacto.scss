@@ -6,13 +6,11 @@
     width: 100%;
     min-height: 90vh;
     max-height: 100vh;
-    // margin-top: 14vh;
-    background-position-y: 20vh;
 
     h1 {
       font-size: 15vh;
       text-align: center;
-      padding-top: 45vh;
+      padding-top: 40vh;
       text-shadow: 10px 10px 10px black;
     }
   }
@@ -55,7 +53,7 @@
       margin:3vh 0vw 0 0vw ;
       min-width: 30vw ;
       max-width: 40vw;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: $color-fondo;
       background-color: $color-letra;
       border: none;
@@ -123,3 +121,74 @@
       max-width:100% ;
     }
   }
+// ---------------------------------MEDIA QUERIE MEDIANO GRANDE---------------------------------------
+  @media(max-width:975px){
+    .encuesta {
+  
+      input, select, option {
+        margin:3vh 0vw 0 0vw ;
+        min-width: 45vw ;
+        font-size: 1rem;
+
+  
+      }
+  
+  
+    }
+
+  }
+  //------------------------------- MEDIA QUERIE CHICO MEDIANO----------------------------------------
+  @media(max-width:660px){
+    .encuesta{
+      flex-direction: column;
+      align-content: center;
+
+      input, select, option{
+        min-width: 90vw;
+      }
+    }
+    .contacto{
+      flex-direction: column;
+      .fotoCopa{
+        align-self: center;
+        max-width: 95%;
+        margin: 2vw;
+        img{
+          max-width:100% ;
+        }
+      }
+      input, textarea{
+        min-width: 40vw;
+      }
+      .siNo{
+        input{
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+    }
+  }
+// -------------------------------- MEDIA QUERIE CHICO------------------------------------------------
+@media(max-width:375px){
+  .contenido__principal--contacto {
+    background-image: url(../recursos/contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 60vh;
+
+    h1 {
+      font-size: 10vh;
+      padding-top: 26vh;
+    }
+  }
+
+  .contacto{
+    span{
+      font-size: 0.85rem;
+    }
+
+  }
+
+}
