@@ -1,0 +1,9 @@
+Implementacion de SEO
+
+- Titulos diferenciados de cada html del sitio.
+- Uso de keywords o palabras clave en cada html.
+- Descripcion meta de cada html del sitio.
+- Correcto uso de los encabezados (h1, h2, etc...)
+- Uso de etiquetas semánticas
+
+
