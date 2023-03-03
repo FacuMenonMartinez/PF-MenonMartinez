@@ -198,14 +198,23 @@
     span{
       font-size: 0.85rem;
     }
-    input, textarea{
-      // PARA LOS BOTONES SI/NO
-      min-width: 8vw;
-      // PARA EL AREA DE CONTACTO INPUT
-      max-width: 95%;
+    .formularioContacto{
+      input, textarea{
+        min-width: 95%;
+        max-width: 95%;
+        margin: 1vw auto;
+  
+      }
 
     }
 
+    .siNo{
+      input{
+        min-width: 8vw;
+        margin: 0;
+      }
+
+}
   }
 
 }

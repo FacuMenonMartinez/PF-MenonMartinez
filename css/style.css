@@ -1250,6 +1250,10 @@ form h3 {
     width: 100%; }
     .contacto span {
       font-size: 0.85rem; }
-    .contacto input, .contacto textarea {
+    .contacto .formularioContacto input, .contacto .formularioContacto textarea {
+      min-width: 95%;
+      max-width: 95%;
+      margin: 1vw auto; }
+    .contacto .siNo input {
       min-width: 8vw;
-      max-width: 95%; } }
+      margin: 0; } }
