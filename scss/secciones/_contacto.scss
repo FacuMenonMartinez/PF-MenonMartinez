@@ -170,19 +170,28 @@
     }
   }
 // -------------------------------- MEDIA QUERIE CHICO------------------------------------------------
-@media(max-width:375px){
+@media(max-width:480px){
   .contenido__principal--contacto {
     background-image: url(../recursos/contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
 
     h1 {
-      font-size: 10vh;
+      font-size: 8vh;
       padding-top: 26vh;
     }
   }
+  .contacto{
+    span{
+      text-align: center;
+    }
+
+  }
+}
+@media(max-width:375px){
+
 
   .contacto{
     span{

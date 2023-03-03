@@ -374,15 +374,23 @@
         font-size: 3.2vh;
 
     }
+    .copaInfo {
+        font-size: 2vh;
+    }
 
 }
 
-@media(max-width:325px) {
+@media(max-width:360px) {
     .campeones-lista {
         font-size: 3vh;
     }
     .ediciones {
-        font-size: 5vh;
+        font-size: 4vh;
     }
+    .copaInfo {
+        font-size: 1.5vh;
+    }
+
+
 
 }

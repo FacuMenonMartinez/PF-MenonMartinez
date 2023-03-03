@@ -218,6 +218,14 @@
 
 // -------------------MEDIA QUERIE CHICO MEDIANO-----------------------
 @media(max-width:490px){
+    .contenido__principal--eliminatoria {
+        min-height: 50vh;
+        h1 {
+            font-size: 5vh;
+            padding-top: 30vh;
+
+        }
+    }
     .marcador1{
         font-size: 1.3rem;
     }
@@ -243,13 +251,13 @@
 // -----------------MEDIA QUERIE CHICO--------------------------------
 @media(max-width:375px){
     .contenido__principal--eliminatoria {
-        min-height: 50vh;
         h1 {
-            font-size: 8vh;
+
             padding-top: 20vh;
 
         }
     }
+
     .fase{
         font-size: 5vh;
         margin-top: 2vh;
