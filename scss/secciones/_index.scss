@@ -369,28 +369,35 @@
     h3 {
         font-size: 4vh;
     }
+    .ediciones {
+        font-size: 3.5vh;
+    }
+    .campeones-lista {
+        font-size: 2vh;
 
+    }
+    .copaInfo {
+        font-size: 1.2vh;
+    }
     .individuales-categoria {
         font-size: 3.2vh;
 
     }
-    .copaInfo {
-        font-size: 2vh;
-    }
-
-}
-
-@media(max-width:360px) {
-    .campeones-lista {
-        font-size: 3vh;
-    }
-    .ediciones {
-        font-size: 4vh;
-    }
-    .copaInfo {
-        font-size: 1.5vh;
-    }
-
 
 
 }
+
+// @media(max-width:360px) {
+//     .campeones-lista {
+//         font-size: vh;
+//     }
+//     .ediciones {
+//         font-size: 4vh;
+//     }
+//     .copaInfo {
+//         font-size: 1.5vh;
+//     }
+
+
+
+// }
