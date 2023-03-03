@@ -194,8 +194,16 @@
 
 
   .contacto{
+    width: 100%;
     span{
       font-size: 0.85rem;
+    }
+    input, textarea{
+      // PARA LOS BOTONES SI/NO
+      min-width: 8vw;
+      // PARA EL AREA DE CONTACTO INPUT
+      max-width: 95%;
+
     }
 
   }

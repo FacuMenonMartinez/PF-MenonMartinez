@@ -1246,5 +1246,10 @@ form h3 {
     text-align: center; } }
 
 @media (max-width: 375px) {
-  .contacto span {
-    font-size: 0.85rem; } }
+  .contacto {
+    width: 100%; }
+    .contacto span {
+      font-size: 0.85rem; }
+    .contacto input, .contacto textarea {
+      min-width: 8vw;
+      max-width: 95%; } }
