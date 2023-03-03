@@ -1245,7 +1245,7 @@ form h3 {
   .contacto span {
     text-align: center; } }
 
-@media (max-width: 375px) {
+@media (max-width: 395px) {
   .contacto {
     width: 100%; }
     .contacto span {
